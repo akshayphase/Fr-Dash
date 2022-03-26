@@ -1,0 +1,81 @@
+.cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #767676;
+}
+.loginbox{
+    display: grid;
+}
+input{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+input, ion-button{
+    font-size: 18px;
+}
+ion-button{
+    --background: #fff;
+    --color:#767676
+}
+
+
+
+.page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;  
+    /* background: url('../../assets/ivis.png') repeat center center fixed; 
+    /* background: rgb(250, 235, 235); */
+  }
+  .cont{
+    width: 300px;
+    height: 275px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: -webkit-center;
+    border-radius: 6px;
+    background-color: #767676;
+    /* background: #Efeeee;
+    box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.1),
+    0px -9px 24px 4.5px rgba(255, 255, 255, 0.8); */
+  }
+  .cont input, .cont button{
+    height: -webkit-fill-available;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px;
+    text-align: center;
+  }
+  .cont button{
+    height: 45px;
+    padding: 0;
+    background-color: #f6992f;
+    color: rgb(29, 44, 28);
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .cont label{
+    color: aliceblue;
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .logo{
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+  }
+  

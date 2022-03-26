@@ -1,0 +1,32 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <app-loader *ngIf="showLoader"></app-loader>
+
+  <!-- <div class="cont">
+    <div class="loginbox">
+      <div style="margin-bottom: 50px; font-size: 25px;">Sign-In</div>
+      <input type="email" [(ngModel)]="username" name="user" class="form-control" id="exampleInputEmail1" placeholder="Username" />
+      <input type="password" [(ngModel)]="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+      <ion-button (click)="login()">Sign-In</ion-button>
+    </div>
+  </div> -->
+
+
+  <div class="page">
+    <img src="../../assets/ivis.png" class="logo">
+    <div class="cont">
+      <label>Username</label>
+      <input type="text" [(ngModel)]="username" >
+      <label>Password</label>
+      <input type="password" [(ngModel)]="password">
+      <button (click)="login()">Signin</button>
+    </div>
+  </div>
+  
+
+</ion-content>

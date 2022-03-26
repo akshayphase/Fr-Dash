@@ -1,0 +1,42 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <app-loader *ngIf="showLoader"></app-loader>
+
+  <div class="cont">
+
+
+    <div class="title">
+      <div>Hi {{user?.FirstName}}</div>
+      <ion-button (click)="logout()">Logout</ion-button>
+    </div>
+
+    <div class="data table table-striped" *ngIf="tickets?.length != 0">
+
+      <table>
+        <thead style="cursor: pointer;">
+          <tr>
+             <th *ngFor="let col of cols" >{{col}}</th>
+             <th style="width: 100px;">latitude and longitude</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let ticket of tickets">
+
+          <tr class="tableElements">
+             <td *ngFor="let col of cols">{{ticket[col]}}</td>
+             <td style="text-align: center;"><button (click)="saveCoOrds(ticket)">Capture Co-Ordinates</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+    <div *ngIf="tickets?.length == 0">No Tickets Avialable</div>
+
+
+  </div>
+</ion-content>
