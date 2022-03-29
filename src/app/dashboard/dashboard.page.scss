@@ -20,9 +20,10 @@ input, ion-button{
   font-size: 18px;
 }
 ion-button{
-      --background: #123E6F;
+    --background: #123E6F;
     --color: #767676;
-    height: 35px;
+    --border-radius: 18px;
+    height: 36px;
     width: 100px;
     margin: auto;
     margin-right: 0;
@@ -31,12 +32,11 @@ ion-button{
     color: white;
     font-weight: 600;
     font-size: 15px;
-    border-radius: 17px;
 }
 .title{
   align-items: center;
   width: 100%;
-  background: #BC4B3E;
+  background: #f6992f;
   position: fixed;
   top: 0;
   display: flex;
@@ -60,7 +60,7 @@ table{
   width: -webkit-fill-available;
   color: black;
 }    
-th{text-transform: capitalize; text-align: center;  border: 1px solid #1f1f1f;
+th{text-transform: capitalize; text-align: center;  border: 1px solid #1f1f1f; padding: 10px 0 !important;
 background: #f6992f;
 }
 thead tr{ 
@@ -72,11 +72,41 @@ td{ text-align:center; border: 1px solid #1f1f1f;}
 td, th{ font-size: 14px;}
 td button{
   border: 1px solid #767676;
-  border-radius: 25px;
-  font-size: 12px;
-  padding: 4px;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 8px;
   width: 80px;;
 }
+.ttl{
+  color: #5b5b5b;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.refreshbtn{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  border-radius: 30px;
+  background: #123E6F;
+  border: 5px solid #123E6F;
+}
+.dot{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid #f6992f;
+  display: flex;
+  margin: 2px;
+  // background-color: #922e2e;
+  // background-color: #3be725;
+  text-align: center;
+}
+.red{ background-color: #922e2e;}
+.green{ background-color: #3be725;}
+.transparent{ background-color: #00000000;}
+
 
 // table{border-collapse: collapse;}
 // table tbody { display:block; max-height:450px; overflow-y:scroll; color: #1d2c1c; }

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DataService } from '../services/data.service';
-import { Platform } from '@ionic/angular';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { AlertService } from '../services/alertservice/alert-service.service';
+import { DataService } from '../services/data.service';
 
 
 
@@ -30,21 +30,25 @@ export class DashboardPage implements OnInit {
   constructor(
     private dataservice: DataService, 
     private router: Router, 
-    platform: Platform,
-    private geolocation: Geolocation) { }
+    private geolocation: Geolocation,
+    private alertservice:AlertService) { }
 
   ngOnInit() {
+ 
+  }
+  /*  this is important */
+  ionViewWillEnter(){
     this.user = this.dataservice.getEncrData('user');
+    this.getTickets();
     if(this.user == null){
       this.router.navigateByUrl("/login")
-    }else{
-      this.getTickets();
-    }
+     }
   }
 
   logout(){
-    localStorage.clear();
-    this.router.navigateByUrl('/login');  
+    // localStorage.clear();
+    localStorage.removeItem("user");
+    this.router.navigateByUrl('/login'); 
   }
 
   getTickets(){
@@ -52,26 +56,90 @@ export class DashboardPage implements OnInit {
     this.showLoader=true;
     this.dataservice.getOpenTickets(id).subscribe((res:any)=>{
       this.showLoader=false;
-      console.log(res)
       if(res.Message !="Tickets are not available"){
-      this.tickets = res;}
+      this.tickets = res;
+      this.updateTicketdata();
+      }
       else{
         this.tickets = [];
       }
     })
   }
+  savedstatus:any;
+  saveTicketStatusLocally(){
+    var status = [];
+    this.tickets.forEach((el:any) => {
+      if(el.latitude == "" || el.latitude == null){
+        status.push({id:el.id, status:"unopened"})
+      }else{
+        status.push({id:el.id, status:"registered"})
+      }
+      localStorage.setItem('ticketstaus', JSON.stringify(status))
+      this.savedstatus = (JSON.parse(localStorage.getItem('ticketstaus')))
+    });
+  }
+  updateTicketdata(){
+    this.savedstatus = (JSON.parse(localStorage.getItem('ticketstaus')));
+    var day = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+    var savedday = localStorage.getItem('today');
+    if(this.savedstatus){
+      if(day != savedday){this.saveTicketStatusLocally(); console.log("day does not match")}
+      if(this.savedstatus == undefined){this.saveTicketStatusLocally(); console.log("no data")}
+      if(day == savedday && this.savedstatus != undefined){
+        console.log("well i am refreshing");
+        if(this.tickets.length > this.savedstatus.length){
+          this.tickets.forEach((el:any) => {
+            this.savedstatus.forEach((item)=>{
+              if(item.id != el.id){
+                this.savedstatus.push({id:el.id, status:"unopened"})
+                localStorage.setItem('ticketstaus', JSON.stringify(this.savedstatus))
+              }
+            })
+          });
+        }
+      }
+    }else{
+      this.saveTicketStatusLocally()
+    }
+  }
+  color(ticket:any){
+    if(ticket.latitude != null){
+      return 'registered'
+    }else{       
+      var x = (JSON.parse(localStorage.getItem('ticketstaus')))
+      if(x){
+        var y = x.filter(function( obj ) {return obj.id === ticket.id;}); 
+        return y.status;
+      }
+    }
+  }
   currenTicket:any;
   saveCoOrds(ticket:any){
-    this.showLoader=true;
-    this.currenTicket=ticket;
-    this.geolocation.getCurrentPosition().then((resp) => {
-      this.showLoader = false;
-      this.currentlatitude = resp.coords.latitude;
-      this.currentlongitude = resp.coords.longitude;
-      this.getAccount(ticket.accountId);
-     }).catch((error) => {
-       console.log('Error getting location', error);
-     });
+    if(ticket.latitude == null){
+      this.updateTicketdata();
+      this.showLoader=true;
+      this.currenTicket=ticket;
+      if(this.savedstatus){
+        var x = (JSON.parse(localStorage.getItem('ticketstaus')))
+        if(ticket.latitude == null){
+          x.find(v => v.id == ticket.id).status = 'unregistered';
+          localStorage.setItem('ticketstaus', JSON.stringify(x))
+          this.savedstatus = x
+        }
+      }
+      this.geolocation.getCurrentPosition().then((resp) => {
+        setTimeout(() => {
+          this.showLoader = false;
+        }, 2000);
+        this.currentlatitude = resp.coords.latitude;
+        this.currentlongitude = resp.coords.longitude;
+        this.getAccount(ticket.accountId);
+       }).catch((error) => {
+         console.log('Error getting location', error);
+       });
+    }else{
+      alert("Latitude and Longitude already captured")
+    }
   }
   getAccount(id:any){
     this.dataservice.getAccount(id).subscribe((res:any)=>{
@@ -88,13 +156,11 @@ export class DashboardPage implements OnInit {
             alert(res.Message)
           })
         }else{
-          alert("Failed: Please make sure you are within 100mtrs of ATM")
+          alert(`Observed Latitude and Longitude do not match with site data. Please contact Co-Ordinator / Manager \n \n \n Current Latitude is ${this.currentlatitude} \n Current Longitude is ${this.currentlongitude}`)
         }
       }
     })
   }
-
-
 
   distance(lat1, lon1, lat2, lon2, unit) {
     var radlat1 = Math.PI * lat1/180

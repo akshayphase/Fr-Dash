@@ -12,13 +12,13 @@ export class AlertComponent implements OnInit {
   message: any;
 
   constructor(private alertService: AlertService) {
-    var timer: any = null;
+    // var timer: any = null;
     // subscribe to alert messages
     this.subscription = alertService.getMessage().subscribe(message => {
-      if (timer) {clearTimeout(timer); timer = null;}
-      timer = setTimeout(()=>{this.closeMessage()}, 5000);
+      // if (timer) {clearTimeout(timer); timer = null;}
+      // timer = setTimeout(()=>{this.closeMessage()}, 5000);
       this.message = message;
-      timer;
+      // timer;
     });
   }
   ngOnInit() {  

@@ -41,3 +41,19 @@ export class AppModule {}
  * jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore fr-dash-key.keystore platforms/android/app/build/outputs/apk/debug/app-debug.apk ivis
  * ./zipalign.exe -v 4 platforms/android/app/build/outputs/apk/debug/app-debug.apk fr-dash.apk
  */
+
+
+/*
+
+
+Notes: 
+1. Remove min and max sdk versio when publishing app (remove from config.xml file) / maxversion to latest
+2. update network_security_config.xml file with default code given below: (path: resources/android/xml)
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+    </domain-config>
+</network-security-config> -->
+3. always include  android:usesCleartextTraffic="true" permission to access HTTP (add inside edit-config tag -> inside aplication tag )
+*/

@@ -21,6 +21,9 @@ export class LoginPage implements OnInit {
   }
 
   login() {
+    localStorage.clear();
+    var today = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+    localStorage.setItem('today', today);
     this.showLoader=true;
     let data = {
       "userName": this.username,
@@ -29,12 +32,12 @@ export class LoginPage implements OnInit {
   
     if(this.username != "" && this.password!=""){
       this.dataservice.login(data).subscribe((res:any)=>{
-        console.log(res)
         this.showLoader=false;
         if(res.status == "Success"){
-          if(res.roleId == "20" && res.enabled == "Y"){
+          // if(res.enabled == "Y"){
+          if(res.roleId == "20" || res.roleId == "30" && res.enabled == "Y"){
             this.dataservice.storeEncrData("user", res);
-            this.router.navigateByUrl('/dashboard')
+            this.router.navigateByUrl('/dashboard');
           }else{
             this.alertService.success("You are not authorized to login")
           }
@@ -42,7 +45,7 @@ export class LoginPage implements OnInit {
           this.alertService.success("Login failed. Please Enter correct details")
         }
       },(error)=>{
-        console.log(error)
+        console.log((error))
         this.showLoader=false;
         this.alertService.success(error.message)
 
@@ -52,6 +55,5 @@ export class LoginPage implements OnInit {
       this.alertService.success("Please enter details")
     }
   }
-
 
 }
