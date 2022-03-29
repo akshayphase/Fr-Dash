@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AndroidPermissions } from '@awesome-cordova-plugins/android-permissions/ngx';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { AlertService } from '../services/alertservice/alert-service.service';
 import { DataService } from '../services/data.service';
@@ -30,7 +31,8 @@ export class DashboardPage implements OnInit {
   constructor(
     private dataservice: DataService, 
     private router: Router, 
-    private geolocation: Geolocation,
+    private geolocation: Geolocation,    
+    private androidPermissions: AndroidPermissions,
     private alertservice:AlertService) { }
 
   ngOnInit() {
@@ -43,6 +45,18 @@ export class DashboardPage implements OnInit {
     if(this.user == null){
       this.router.navigateByUrl("/login")
      }
+     this.checklocation();
+  }
+
+  checklocation(){
+    this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION).then(
+      result => {console.log('Has permission?',result.hasPermission)
+        if(result.hasPermission == false){
+          this.router.navigateByUrl('/location')
+        }
+      }, 
+      err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION)
+    );
   }
 
   logout(){

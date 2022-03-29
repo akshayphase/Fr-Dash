@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { Platform } from '@ionic/angular';
+import { AndroidPermissions } from '@awesome-cordova-plugins/android-permissions/ngx';
+
 
 @Component({
   selector: 'app-root',
@@ -20,6 +22,7 @@ export class AppComponent {
   constructor(
     private splashScreen: SplashScreen,
     private platform: Platform,
+    private androidPermissions: AndroidPermissions
     // private statusBar: StatusBar,
   ) {
     this.initializeApp();
@@ -30,7 +33,24 @@ export class AppComponent {
     this.platform.ready().then(() => {
       // this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.checklocationpermission()
     });
     // this.navCntrl.navigateRoot('login')
   }
+
+  checklocationpermission(){
+    this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION).then(
+      result => console.log('Has permission?',result.hasPermission), 
+      err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION)
+    );
+    
+    this.androidPermissions.requestPermissions([
+      this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION, 
+      this.androidPermissions.PERMISSION.ACCESS_BACKGROUND_LOCATION,
+      this.androidPermissions.PERMISSION.ACCESS_COARSE_LOCATION,
+    ]);
+  }
+
+
+
 }

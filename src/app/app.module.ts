@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './services/sharedModule';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { AndroidPermissions } from '@awesome-cordova-plugins/android-permissions/ngx';
 
 
 
@@ -19,6 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule,SharedModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, StreamingMedia,
     Geolocation,
+    AndroidPermissions,
     SplashScreen,
     NativeGeocoder,],
   bootstrap: [AppComponent],
