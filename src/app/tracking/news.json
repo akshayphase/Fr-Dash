@@ -1,0 +1,954 @@
+{"current":[{
+"status": "ok",
+"totalResults": 8164,
+"articles": [
+{
+"source": {
+"id": null,
+"name": "Finextra"
+},
+"author": "Editorial Team",
+"title": "Paystand launches business expense card with bitcoin rewards",
+"description": "Blockchain-enabled B2B payments specialist Paystand has unveiled a corporate expense card with native cryptocurrency rewards.",
+"url": "https://www.finextra.com/newsarticle/39962/paystand-launches-business-expense-card-with-bitcoin-rewards",
+"urlToImage": "https://www.finextra.com/finextra-images/top_pics/xl/bitcoin_07.jpg",
+"publishedAt": "2022-03-30T11:05:02Z",
+"content": "Blockchain-enabled B2B payments specialist Paystand has unveiled a corporate expense card with native cryptocurrency rewards.\r\nThe DeFi Corporate Card offers instant provisioning of virtual and physi… [+502 chars]"
+},
+{
+"source": {
+"id": "business-insider",
+"name": "Business Insider"
+},
+"author": "snagarajan@insider.com (Shalini Nagarajan)",
+"title": "Uber CEO says cryptocurrencies need to become more efficient for the ride-hailing company to accept them as payment",
+"description": "Crypto has not yet demonstrated its utility in terms of being an efficient exchange of value, Uber chief executive Khosrowshahi said.",
+"url": "https://markets.businessinsider.com/news/currencies/uber-crypto-payment-acceptance-more-efficient-dara-khosrowshahi-ceo-cryptocurrencies-2022-3",
+"urlToImage": "https://i.insider.com/624422d8764fa90018bafa8c?width=1200&format=jpeg",
+"publishedAt": "2022-03-30T11:03:33Z",
+"content": "Cryptocurrencies need to become more efficient for ride-hailing company Uber to accept them as payment, CEO Dara Khosrowshahi said.\r\n\"It's demonstrated to be a real store of value, but it has not yet… [+2050 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Forkast.news"
+},
+"author": "Forkast.News",
+"title": "Is Dubai the new crypto promised land?",
+"description": "Top blockchain and cryptocurrency news: Dubai’s crypto caravan. Mt. Gox unlocked. Digital yuan in play again.",
+"url": "https://forkast.news/dubai-new-crypto-mtgox-digital-yuan/",
+"urlToImage": "https://forkast.news/wp-content/uploads/2022/03/dubai-cityscape-2021-09-04-08-14-29-utc-1260x841.jpg",
+"publishedAt": "2022-03-30T11:03:00Z",
+"content": "In this issue\r\n<ol><li>Dubai: Oasis or mirage?</li><li>Mt. Gox: Payback time</li><li>e-CNY: Game on</li></ol>From the editor’s desk\r\nDear Reader,\r\nThe pace and sheer volume of change in the cryptocur… [+11325 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "PRNewswire"
+},
+"author": null,
+"title": "Opera Takes a Giant Leap Into Web3, Integrates Solana, Polygon, StarkEx, and Others",
+"description": "Opera users are getting seamless access to blockchains and decentralized apps (dapps) and services within eight different blockchain ecosystems including Solana, Polygon, StarkEx/Deversifi Layer 2 and Bitcoin as well as IXO, Ronin, Nervos and Celo OSLO, Norwa…",
+"url": "https://www.prnewswire.com/news-releases/opera-takes-a-giant-leap-into-web3-integrates-solana-polygon-starkex-and-others-301513688.html",
+"urlToImage": "https://mma.prnewswire.com/media/1776727/Opera_Limited_integrating.jpg?p=facebook",
+"publishedAt": "2022-03-30T11:01:00Z",
+"content": "Notably, today's launch also extends access to PoS blockchains and Ethereum Layer-2 ecosystems: Polygon and StarkEx. By gaining entry to these blockchains, users can benefit from lower gas fees and f… [+8408 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "PRNewswire"
+},
+"author": null,
+"title": "Voyager News Release",
+"description": "TSX: VOYG OTCQX: VYGVF FRA: UCD2 NEW YORK, March 30, 2022 /PRNewswire/ - Voyager Digital Ltd. (TSX: VOYG) (OTCQX: VYGVF) (FRA: UCD2) is at the forefront of the rapidly evolving crypto industry, and is committed to providing the best experience for its custome…",
+"url": "https://www.prnewswire.com/news-releases/voyager-news-release-301513643.html",
+"urlToImage": "https://mma.prnewswire.com/media/1776494/Voyager_Digital__Canada__Ltd__Voyager_News_Release.jpg?p=facebook",
+"publishedAt": "2022-03-30T11:00:00Z",
+"content": "TSX: VOYGOTCQX: VYGVFFRA: UCD2\r\nNEW YORK, March 30, 2022 /PRNewswire/ -  Voyager Digital Ltd. (TSX: VOYG) (OTCQX: VYGVF) (FRA: UCD2) is at the forefront of the rapidly evolving crypto industry, and i… [+9331 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Gizmodo.com"
+},
+"author": "Matt Novak",
+"title": "Hackers Steal $625 Million From Ronin Network in Largest Ever Crypto Theft",
+"description": "Hackers stole roughly $625 million in cryptocurrency from the Ronin blockchain and the play-to-earn Axie Infinity video game network that operates on top of it, according to a disclosure from the Ronin Network late Tuesday. The hack is believed to be the bigg…",
+"url": "https://gizmodo.com/hackers-steal-625-million-from-ronin-network-in-larges-1848724760",
+"urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/ef6ab9d34a31d2922f4e776d11d31c72.png",
+"publishedAt": "2022-03-30T11:00:00Z",
+"content": "Hackers stole roughly $625 million in cryptocurrency from the Ronin blockchain and the play-to-earn Axie Infinity video game network that operates on top of it, according to a disclosure from the Ron… [+2734 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Finbold.com"
+},
+"author": "Ana Nicenko",
+"title": "FDIC-insured bank closes Bitcoin-collateralized $205 million loan to buy more Bitcoin",
+"description": "MacroStrategy LLC, a subsidiary of MicroStrategy Incorporated (MSTR) has recently loaned $205 million with collateral in Bitcoin (BTC), allowing it... Continue reading \nThe post FDIC-insured bank closes Bitcoin-collateralized $205 million loan to buy more Bit…",
+"url": "https://finbold.com/fdic-insured-bank-closes-bitcoin-collateralized-205-million-loan-to-buy-more-bitcoin/",
+"urlToImage": "https://finbold.com/wp-content/uploads/2022/03/FDIC-insured-bank-closes-Bitcoin-collateralized-205-million-loan-to-buy-more-Bitcoin.jpg",
+"publishedAt": "2022-03-30T10:57:59Z",
+"content": "MacroStrategy LLC, a subsidiary of MicroStrategy Incorporated (MSTR) has recently loaned $205 million with collateral in Bitcoin (BTC), allowing it to purchase even more of the digital asset.\r\nThe lo… [+2081 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "CryptoSlate"
+},
+"author": "Laszlo Dobos",
+"title": "Confirmed: Russians do not evade sanctions using crypto, Chainalysis",
+"description": "As Russia’s war in Ukraine continues, cryptocurrencies are taking on an important role in the conflict, but not in the capacity of evading sanctions on Russian entities or oligarchs. \nThe post Confirmed: Russians do not evade sanctions using crypto, Chainalys…",
+"url": "https://cryptoslate.com/confirmed-russians-do-not-evade-sanctions-using-crypto-chainalysis/",
+"urlToImage": "https://cryptoslate.com/wp-content/uploads/2022/03/russia-crypto-sanction.jpg",
+"publishedAt": "2022-03-30T10:45:13Z",
+"content": "As Russias war in Ukraine continues, cryptocurrencies are taking on an important role in the conflict, but not in the capacity of evading sanctions on Russian entities or oligarchs. On the contrary, … [+8496 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "ZyCrypto"
+},
+"author": "Brenda Ngari",
+"title": "Bitcoin On The Cusp Of Mimicking The 2011 Bull Run, Says Stock-to-Flow Model Creator",
+"description": "As the crypto market edges higher, bulls are growing in confidence that new all-time highs are on the horizon. And as far as PlanB is concerned, the world’s largest cryptocurrency by market cap has a shot at pulling off a 2011-style rally.",
+"url": "https://zycrypto.com/bitcoin-on-the-cusp-of-mimicking-the-2011-bull-run-says-stock-to-flow-model-creator/",
+"urlToImage": "https://zycrypto.com/wp-content/uploads/2021/04/Bitcoin-can-effectively-prolong-its-bull-run-in-two-ways-but-they-are-both-bearish.jpg",
+"publishedAt": "2022-03-30T10:41:57Z",
+"content": "As the crypto market edges higher, bulls are growing in confidence that new all-time highs are on the horizon. And as far as PlanB is concerned, the worlds largest cryptocurrency by market cap has a … [+2136 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Finbold.com"
+},
+"author": "Jordan Major",
+"title": "Robert Kiyosaki warns US dollar is ‘about to implode’, advises buying Bitcoin, ETH, SOL",
+"description": "Businessman and author of the personal finance book “Rich Dad Poor Dad,” Robert Kiyosaki, has returned with his latest warnings... Continue reading \nThe post Robert Kiyosaki warns US dollar is ‘about to implode’, advises buying Bitcoin, ETH, SOL appeared firs…",
+"url": "https://finbold.com/robert-kiyosaki-warns-us-dollar-is-about-to-implode-advises-buying-bitcoin-eth-sol/",
+"urlToImage": "https://finbold.com/wp-content/uploads/2022/03/Robert-Kiyosaki-warns-US-dollar-is-about-to-implode-advises-buying-Bitcoin-ETH-SOL.jpg",
+"publishedAt": "2022-03-30T10:33:16Z",
+"content": "Businessman and author of the personal finance book “Rich Dad Poor Dad,” Robert Kiyosaki, has returned with his latest warnings about the impending collapse of the US Dollar, as well as a recommendat… [+1967 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Ritholtz.com"
+},
+"author": "Barry Ritholtz",
+"title": "10 Wednesday AM Reads",
+"description": "My mid-week Aspen reads: • What Does a Bond Bear Market Look Like? There have basically only been three long-term bond market cycles over the past 100 years or so for U.S. government bonds: (A Wealth of Common Sense) • Climate groups say a change in coding ca…",
+"url": "https://ritholtz.com/2022/03/10-wednesday-am-reads-280/",
+"urlToImage": "https://ritholtz.com/wp-content/uploads/2022/03/ifpi.png",
+"publishedAt": "2022-03-30T10:30:31Z",
+"content": "What Does a Bond Bear Market Look Like? There have basically only been three long-term bond market cycles over the past 100 years or so for U.S. government bonds: (A Wealth of Common Sense)\r\nClimate … [+2373 chars]"
+},
+{
+"source": {
+"id": "newsweek",
+"name": "Newsweek"
+},
+"author": "Ben Weingarten",
+"title": "Biden Crypto Executive Order Portends Dollar Destruction, Liberty Erosion | Opinion",
+"description": "How are the American people to believe a digital dollar would serve as anything other than a tool for surveillance and control?",
+"url": "https://www.newsweek.com/biden-crypto-executive-order-portends-dollar-destruction-liberty-erosion-opinion-1692741",
+"urlToImage": "https://d.newsweek.com/en/full/2010373/us-president-joe-biden-introduces-his-budget.jpg",
+"publishedAt": "2022-03-30T10:30:01Z",
+"content": "If you like what the Biden administration has done to the paper dollar, then you'll love what it could do to a digital dollar.\r\nThe odds of that perilous prospect becoming reality increased exponenti… [+10249 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Dcforecasts.com"
+},
+"author": "Stefan",
+"title": "Ripple’s Chris Larsen Proposed A Change To Bitcoin’s Code",
+"description": "Ripple’s Chris Larsen, the co-founder of the company, has been blasted on social media after the proposed change to Bitcoin’s code and the reactions were ferocious so let’s read more in today’s latest Ripple news. Bitcoin supporters blasted Ripple’s Chris Lar…",
+"url": "https://www.dcforecasts.com/ripple-news/ripples-chris-larsen-proposed-a-change-to-bitcoins-code/",
+"urlToImage": "https://www.dcforecasts.com/wp-content/uploads/2020/07/chris-larsen.png",
+"publishedAt": "2022-03-30T10:26:51Z",
+"content": "Ripples Chris Larsen, the co-founder of the company, has been blasted on social media after the proposed change to Bitcoins code and the reactions were ferocious so lets read more in todays latest Ri… [+3450 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "City A.M."
+},
+"author": "Crypto AM Daily in association with Luno",
+"title": "Crypto markets flat as MicroStrategy announces another massive Bitcoin purchase",
+"description": "The price of Bitcoin is currently holding steady at about $47,400 with the Ethereum price treading water at $3,400.\nThe post Crypto markets flat as MicroStrategy announces another massive Bitcoin purchase appeared first on CityAM.",
+"url": "https://www.cityam.com/crypto-markets-flat-as-microstrategy-announces-another-massive-bitcoin-purchase/",
+"urlToImage": "https://www.cityam.com/wp-content/uploads/2021/11/crypto-am-daily-5.jpeg",
+"publishedAt": "2022-03-30T10:19:02Z",
+"content": "Wednesday 30 March 2022 11:19 am\r\nThe Bitcoin price is roughly flat over the last day, after a week of gains that took its price over the $48,000 mark for the first time this year. \r\nThe largest cryp… [+6221 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Motley Fool"
+},
+"author": "newsfeedback@fool.com (Will Ebiefung)",
+"title": "2 Top Cryptocurrencies to Buy and Never Sell",
+"description": "Bitcoin and Terra have a foundation for lasting success.",
+"url": "https://www.fool.com/investing/2022/03/30/2-top-cryptocurrencies-to-buy-and-never-sell/",
+"urlToImage": "https://g.foolcdn.com/editorial/images/672159/gettyimages-1323758599.jpg",
+"publishedAt": "2022-03-30T10:15:00Z",
+"content": "Long-term investing is the key to sustainable investing returns. And while not every asset is built for lasting success, Bitcoin ( BTC -0.33% ) and Terra ( LUNA -2.38% ) fit the bill. Let's explore s… [+3211 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Slashdot.org"
+},
+"author": "feedfeeder",
+"title": "A retest is expected, but most analysts expect Bitcoin price to extend much higher - Cointelegraph",
+"description": "A retest is expected, but most analysts expect Bitcoin price to extend much higherCointelegraph Ronin hit by $615M crypto heistFox Business Bitcoin (BTC) Takes a Pause From Sharp Price Rise, Crypto Markets Remain BullishBloomberg Bitcoin Nears 200-Day Average…",
+"url": "https://slashdot.org/firehose.pl?op=view&amp;id=160208415",
+"urlToImage": null,
+"publishedAt": "2022-03-30T10:12:50Z",
+"content": "The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way."
+},
+{
+"source": {
+"id": null,
+"name": "U.Today"
+},
+"author": "U.Today",
+"title": "Dogecoin Co-Founder Says DOGE Needs to Market Itself as \"Digital Currency\"",
+"description": "DOGE creator criticizes scammy tokens, referring to them as ''shit tokens''",
+"url": "https://u.today/dogecoin-co-founder-says-doge-needs-to-market-itself-as-digital-currency",
+"urlToImage": "https://u.today/sites/default/files/styles/1200x900/public/2022-03/13690.jpg",
+"publishedAt": "2022-03-30T10:08:09Z",
+"content": "Disclaimer: The opinion expressed here is not investment advice it is provided for informational purposes only. It does not necessarily reflect the opinion of U.Today. Every investment and all tradin… [+2919 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Cointelegraph"
+},
+"author": "Cointelegraph By Prashant Jha",
+"title": "'Nothing is growing as fast as cryptocurrency': Kyrgyz MP wants national crypto",
+"description": "Kyrgyzstan has regulated the crypto exchanges and the mining industry, however, there are no laws governing the circulation of cryptocurrencies in the country.",
+"url": "https://cointelegraph.com/news/nothing-is-growing-as-fast-as-cryptocurrency-kyrgyz-mp-wants-national-crypto",
+"urlToImage": "https://images.cointelegraph.com/images/1200_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjItMDMvYjM2NjA3ZTktYTcxYi00YjRiLTg5YTAtOTEwMzNkNjA4OTI2LmpwZw==.jpg",
+"publishedAt": "2022-03-30T10:06:35Z",
+"content": "Kyrgyz member of parliament (MP) Karim Khanjeza called for the legalization of cryptocurrency in the country during a parliamentary committee meeting on law and order and combating corruption.\r\nDurin… [+1706 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Bitcoinist"
+},
+"author": "Jet Encila",
+"title": "New Crypto Survey Shows 53% Of Americans Think Cryptocurrencies Will Be The ‘Future Of Finance’",
+"description": "According to a new study, more than half of Americans believe cryptocurrencies will be the “future of finance,” signaling a major change in popular view. Some 53% of respondents to a national survey conducted by OnePoll on behalf of StarkWare agreed with this…",
+"url": "https://bitcoinist.com/new-crypto-survey-shows-53/",
+"urlToImage": "https://bitcoinist.com/wp-content/uploads/2022/03/crypto-14.jpg",
+"publishedAt": "2022-03-30T10:06:19Z",
+"content": "According to a new study, more than half of Americans believe cryptocurrencies will be the “future of finance,” signaling a major change in popular view.\r\nSome 53% of respondents to a national survey… [+2656 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "The New Republic"
+},
+"author": "Kate Aronoff",
+"title": "Because Oil Drilling Isn’t Destructive Enough, ExxonMobil Is Getting Into Bitcoin Mining, Too",
+"description": "Earlier this month, ExxonMobil made headlines for loudly and proudly exiting Russia in protest over its government invading Ukraine—even though Exxon and its CEO have been chummy with state-owned Rosneft and Putin himself for years and the company could easil…",
+"url": "https://newrepublic.com/article/165880/exxon-bitcoin-crypto-climate",
+"urlToImage": "https://images.newrepublic.com/5bbb51633315e382ad8f50648dc1dd51888f858d.jpeg?w=1109&h=577&crop=faces&fit=crop&fm=jpg",
+"publishedAt": "2022-03-30T10:00:00Z",
+"content": "In the process, they also generate plenty of emissions. Between April and August of last year, miners doubled their electricity consumption, ballooning their share of global power consumption for com… [+2281 chars]"
+}
+]
+}],
+
+"popular":[
+  {
+    "status": "ok",
+    "totalResults": 2319,
+    "articles": [
+    {
+    "source": {
+    "id": "the-verge",
+    "name": "The Verge"
+    },
+    "author": "Victoria Song",
+    "title": "watchOS 8.5 may have broken fast charging on the Apple Watch Series 7",
+    "description": "After Apple released watchOS 8.5 last week, some Apple Watch Series 7 owners are complaining that their watches are no longer fast charging after updating.",
+    "url": "https://www.theverge.com/2022/3/29/23001584/apple-watch-watchos-broken-fast-charging",
+    "urlToImage": "https://cdn.vox-cdn.com/thumbor/yI0wx-AhGwOOJwbnMcOBVujrdsc=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22908902/vpavic_211006_4796_0039.jpg",
+    "publishedAt": "2022-03-29T18:34:00Z",
+    "content": "Users report slow charging speeds after updating\r\nThe Series 7 was the first Apple Watch to get fast charging. \r\nPhoto by Vjeran Pavic / The Verge\r\nWhile the Apple Watch Series 7 didnt come with long… [+2445 chars]"
+    },
+    {
+    "source": {
+    "id": "the-verge",
+    "name": "The Verge"
+    },
+    "author": "Jasmine Hicks",
+    "title": "Apple TV Plus will begin streaming Friday Night Baseball on April 8th",
+    "description": "Apple TV Plus will kick off Friday Night Baseball coverage on April 8th. For now, the games are free to watch for anyone with the Apple TV app on their streaming devices.",
+    "url": "https://www.theverge.com/2022/3/29/23001613/apple-tv-plus-friday-night-baseball-mlb-sports",
+    "urlToImage": "https://cdn.vox-cdn.com/thumbor/HrCFTBOBMrC5EZQO1at0ltS40K8=/0x530:7398x4403/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/23353770/1239503237.jpg",
+    "publishedAt": "2022-03-29T21:15:28Z",
+    "content": "The games will be free to watch for a while \r\nPhoto by Peter Joneleit/Icon Sportswire via Getty Images\r\nApple TV Plus has announced an April 8th start date for Friday Night Baseballalongside a stream… [+1502 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "Gizmodo.com"
+    },
+    "author": "Andrew Liszewski",
+    "title": "Devialet Crammed 17 Speakers and a Rotating Orb Into Its First Sound Bar",
+    "description": "Devialet announced its first all-in-one TV sound bar Tuesday—a unique design that ensures optimal sound quality no matter where it’s installed.Read more...",
+    "url": "https://gizmodo.com/devialet-dione-sound-bar-boasts-17-speakers-and-a-rotat-1848699729",
+    "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/c7bf0714c7ba759461187f786f540ed7.jpg",
+    "publishedAt": "2022-03-29T08:00:00Z",
+    "content": "Devialet announced its first all-in-one TV sound bar Tuesdaya unique design that ensures optimal sound quality no matter where its installed.\r\nThe Devialet Dione promises to free users from having to… [+2798 chars]"
+    },
+    {
+    "source": {
+    "id": "reuters",
+    "name": "Reuters"
+    },
+    "author": null,
+    "title": "GM keeps up Shanghai output with workers sleeping on factory floor -sources - Reuters.com",
+    "description": "General Motors' <a href=\"https://www.reuters.com/companies/GM.N\" target=\"_blank\">(GM.N)</a> joint venture in Shanghai has maintained production amid the city's lockdown by asking workers to sleep on factory floors and getting passes for trucks to continue del…",
+    "url": "https://www.reuters.com/business/autos-transportation/gm-keeps-up-shanghai-output-with-workers-sleeping-factory-floor-sources-2022-03-29/",
+    "urlToImage": "https://www.reuters.com/resizer/omwdjMb4L-zFV3l9r-_oOc51HeI=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/AVJUFJ2MIFNKDND5W7YXKFTXY4.jpg",
+    "publishedAt": "2022-03-29T06:53:00Z",
+    "content": "SHANGHAI, March 29 (Reuters) - General Motors' (GM.N) joint venture in Shanghai has maintained production amid the city's lockdown by asking workers to sleep on factory floors and getting passes for … [+1920 chars]"
+    },
+    {
+    "source": {
+    "id": "reuters",
+    "name": "Reuters"
+    },
+    "author": "Dawn Chmielewski",
+    "title": "CNN+ subscription streaming news service launches - Reuters.com",
+    "description": "CNN launched its streaming news service CNN+ on Tuesday with a mix of familiar faces such as Anderson Cooper and Chris Wallace, original series and new features, like the \"Interview Club,\" where viewers pose their own questions to experts.",
+    "url": "https://www.reuters.com/article/us-cnn-streaming-launch-idUSKCN2LQ23U",
+    "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20220329&t=2&i=1595797301&r=LYNXNPEI2S12J&w=800",
+    "publishedAt": "2022-03-29T19:12:00Z",
+    "content": "FILE PHOTO: The CNN logo stands outside the venue of the second Democratic 2020 U.S. presidential candidates debate, in the Fox Theater in Detroit, Michigan, U.S., July 30, 2019. REUTERS/Brian Snyder… [+2285 chars]"
+    },
+    {
+    "source": {
+    "id": "reuters",
+    "name": "Reuters"
+    },
+    "author": null,
+    "title": "Futures rise as Russia, Ukraine hold peace talks - Reuters.com",
+    "description": "U.S. stock index futures rose on Tuesday, putting Wall Street on course to extend a recent run of gains, as investors hoped for a breakthrough in Russia-Ukraine peace talks being held in Istanbul.",
+    "url": "https://www.reuters.com/business/futures-rise-russia-ukraine-hold-peace-talks-2022-03-29/",
+    "urlToImage": "https://www.reuters.com/resizer/dgiPgD_GXCDQZAKwK7634X8JjRk=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/NA5EATQ5OBIVXIZ3PLQDJAIWXQ.jpg",
+    "publishedAt": "2022-03-29T11:42:00Z",
+    "content": "March 29 (Reuters) - U.S. stock index futures rose on Tuesday, putting Wall Street on course to extend a recent run of gains, as investors hoped for a breakthrough in Russia-Ukraine peace talks being… [+2451 chars]"
+    },
+    {
+    "source": {
+    "id": "reuters",
+    "name": "Reuters"
+    },
+    "author": null,
+    "title": "Rouble hits one-month high vs dollar, Russian stocks regain ground - Reuters.com",
+    "description": "The Russian rouble strengthened to a more than one-month high in Moscow trade on Tuesday, firming past 88 to the dollar, while stocks regained some ground in the fourth session since trading resumed after a near month-long suspension.",
+    "url": "https://www.reuters.com/business/finance/rouble-hits-one-month-high-vs-dollar-russian-stocks-regain-ground-2022-03-29/",
+    "urlToImage": "https://www.reuters.com/resizer/6mDNglFM3cR4DSzwHtLIdb-Ood8=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/VWJKXP377ZPVBMKJPBAF7TAADQ.jpg",
+    "publishedAt": "2022-03-29T09:46:00Z",
+    "content": "March 29 (Reuters) - The Russian rouble strengthened to a more than one-month high in Moscow trade on Tuesday, firming past 88 to the dollar, while stocks regained some ground in the fourth session s… [+2892 chars]"
+    },
+    {
+    "source": {
+    "id": "reuters",
+    "name": "Reuters"
+    },
+    "author": "Bansari Mayur Kamdar, Amruta Khandekar",
+    "title": "US STOCKS-Wall St buoyed by signs of progress in Russia-Ukraine peace talks - Reuters.com",
+    "description": "US STOCKS-Wall St buoyed by signs of progress in Russia-Ukraine peace talks  Reuters.com",
+    "url": "https://www.reuters.com/article/usa-stocks-idUSL3N2VW31H",
+    "urlToImage": "https://s1.reutersmedia.net/resources_v2/images/rcom-default.png?w=800",
+    "publishedAt": "2022-03-29T14:53:00Z",
+    "content": "(For a Reuters live blog on U.S., UK and European stock markets, click LIVE/ or type LIVE/ in a news window.)\r\n* U.S. 2-yr/10-yr Treasury yield curve inches closer to inversion\r\n* Ukraine-Russia meet… [+3219 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "The Guardian"
+    },
+    "author": "Lauren Aratani",
+    "title": "America is entering the great experiment of hybrid work",
+    "description": "Companies will need to find a new model that works for them and their employees – many of whom prefer to work at home some daysIt can be hard to remember what work at the office was like before the pandemic forced millions of Americans to start working from h…",
+    "url": "https://amp.theguardian.com/us-news/2022/mar/29/hybrid-work-experiment-post-pandemic",
+    "urlToImage": "https://i.guim.co.uk/img/media/f8878f1e37c3257c09df276fabe54ca1ea6f774c/0_0_8688_5213/master/8688.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=552d01619e35239435a97f1bc6a10d22",
+    "publishedAt": "2022-03-29T07:00:16Z",
+    "content": "It can be hard to remember what work at the office was like before the pandemic forced millions of Americans to start working from home. That shift was monumental and seemingly implausible, until it … [+6308 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "The Guardian"
+    },
+    "author": "Noah Gittell",
+    "title": "How Severance became our favourite new mystery box TV show",
+    "description": "The Ben Stiller-directed Apple series is a compelling thriller that paints office life as hell, something many of us can relate toIn 1994, Ben Stiller codified the generation X ethos into celluloid with Reality Bites, which he directed and co-starred in as th…",
+    "url": "https://amp.theguardian.com/tv-and-radio/2022/mar/29/severance-new-mystery-box-tv-show-review",
+    "urlToImage": "https://i.guim.co.uk/img/media/a530a84c2d4a786f3161d802a15f2c7e0151f5c3/0_307_6000_3600/master/6000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c58ed4b7a80ce03e93dae9016f381e39",
+    "publishedAt": "2022-03-29T13:59:25Z",
+    "content": "In 1994, Ben Stiller codified the generation X ethos into celluloid with Reality Bites, which he directed and co-starred in as the films villain. We know hes the villain because he works in an office… [+5342 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "The Guardian"
+    },
+    "author": "Max Fletcher",
+    "title": "Even a mugger didn’t want my old Nokia. So why are so many people turning to ‘dumbphones’? | Max Fletcher",
+    "description": "They are low-tech and hard to text on, but the simplicity is comforting. I was a devotee for years and can see the appeal I was never ideologically opposed to smartphones. Or, at least, I wasn’t at first. It all began one spring afternoon in 2006, when a grou…",
+    "url": "https://amp.theguardian.com/commentisfree/2022/mar/29/mugger-nokia-dumbphones",
+    "urlToImage": "https://i.guim.co.uk/img/media/d8241758f97a2b50dd9b4a7a4900125d25cf2d09/0_140_5184_3110/master/5184.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=935bb058527f2b693dee905100d9cc85",
+    "publishedAt": "2022-03-29T10:41:32Z",
+    "content": "I was never ideologically opposed to smartphones. Or, at least, I wasnt at first. It all began one spring afternoon in 2006, when a group of friends and I were mugged. The assailant demanded our phon… [+5436 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "The Guardian"
+    },
+    "author": "Samuel Gibbs Consumer technology editor",
+    "title": "Surface Laptop Studio review: Microsoft’s top new quirky portable PC",
+    "description": "Part laptop, part drawing tablet, part workstation, there’s nothing quite like this Windows 11 machineThe Surface Laptop Studio is Microsoft’s creative workstation that replaces the unique outgoing Surface Book line with a slightly more normal laptop-like for…",
+    "url": "https://amp.theguardian.com/technology/2022/mar/29/surface-laptop-studio-review-microsofts-top-new-quirky-portable-pc",
+    "urlToImage": "https://i.guim.co.uk/img/media/cdccebc7545d882a18cdaae32f1dd33e55e35290/49_280_5211_3126/master/5211.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTQucG5n&enable=upscale&s=bec6a5a598df01568a8b95a654c61b2f",
+    "publishedAt": "2022-03-29T06:00:16Z",
+    "content": "The Surface Laptop Studio is Microsofts creative workstation that replaces the unique outgoing Surface Book line with a slightly more normal laptop-like form but is still very unusual.\r\nThe new top o… [+7853 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "The Guardian"
+    },
+    "author": "Ryan Gilbey",
+    "title": "Mick Jagger on acting: ‘Jack Nicholson told me to start with a character’s sex life’",
+    "description": "He stripped off in Performance, dragged up in Bent and wore a bucket on his head in Ned Kelly. As he lends his glorious voice to new spy thriller Slow Horses, the Rolling Stone relives his greatest rolesWhere is Mick Jagger right now? “I’m in Frahhhnce where …",
+    "url": "https://amp.theguardian.com/music/2022/mar/29/mick-jagger-acting-jack-nicholson-sex-slow-horses-performance-bent-dragged-ned-kelly",
+    "urlToImage": "https://i.guim.co.uk/img/media/d3765a92a40abc822a38ae29b46432983b90e226/0_115_2614_1567/master/2614.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=fdc7bff552def4949b4ac6d6f4af33f2",
+    "publishedAt": "2022-03-29T16:02:19Z",
+    "content": "Where is Mick Jagger right now? Im in Frahhhnce where its rather grey, drawls the 78-year-old singer with exaggerated languor. I cant even in my wildest imagination call it spring-like. Even down a c… [+11253 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "The Guardian"
+    },
+    "author": "Bee Wilson",
+    "title": "How we lost our sensory connection with food – and how to restore it",
+    "description": "To eat in the modern world is often to eat in a state of profound sensory disengagement. It shouldn’t have to be this wayThis is going to sound weird, but I want you to look closely for a moment at your thumbs. See how they flex forwards as well as back. Noti…",
+    "url": "https://amp.theguardian.com/food/2022/mar/29/how-we-lost-our-sensory-connection-with-food-and-how-to-restore-it",
+    "urlToImage": "https://i.guim.co.uk/img/media/65b326ce7cfe9aeb41ce74268bb0f6231fa1a0a1/0_0_4596_2758/master/4596.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7e3899e87310e566f11c3c28924ddd8a",
+    "publishedAt": "2022-03-29T05:00:14Z",
+    "content": "This is going to sound weird, but I want you to look closely for a moment at your thumbs. See how they flex forwards as well as back. Notice how responsive and grippy the skin is. The human thumb is … [+27271 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "MacRumors"
+    },
+    "author": "Juli Clover",
+    "title": "Friday Night Baseball Coming to Apple TV+ on April 8",
+    "description": "Friday Night Baseball games are set to premiere on Apple TV+ on April 8, Apple said today. Apple earlier this month announced a deal with Major League Baseball for the 2022 season. At the time, the season was postponed due to a labor dispute between the MLB a…",
+    "url": "https://www.macrumors.com/2022/03/29/apple-tv-plus-friday-night-baseball-april-8/",
+    "urlToImage": "https://images.macrumors.com/t/85lIihM07VCr-nMGV8O-6eOBkgs=/1600x/article-new/2022/03/Apple-TV-plus-MLB-Friday-Night-Baseball-hero_big.jpg.medium_2x.jpg",
+    "publishedAt": "2022-03-29T16:06:48Z",
+    "content": "Friday Night Baseball games are set to premiere on Apple TV+ on April 8, Apple said today. Apple earlier this month announced a deal with Major League Baseball for the 2022 season. At the time, the s… [+1080 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "MacRumors"
+    },
+    "author": "Juli Clover",
+    "title": "Apple to Announce Q2 2022 Earnings on April 28",
+    "description": "Apple today announced that it will report its earnings results for the second fiscal quarter (first calendar quarter) of 2022 on Thursday, April 28.\n\n\n\n\n\nThe earnings report and subsequent call will provide us with insight into the period between late Decembe…",
+    "url": "https://www.macrumors.com/2022/03/29/apple-to-announce-q2-2022-earnings-on-april-28/",
+    "urlToImage": "https://images.macrumors.com/t/xkVHlBaujx_SDb1_mm4VSNOI50g=/2676x/article-new/2022/01/Apple-Logo-Cash-Feature-Yellow.jpg",
+    "publishedAt": "2022-03-29T22:13:54Z",
+    "content": "Apple today announced that it will report its earnings results for the second fiscal quarter (first calendar quarter) of 2022 on Thursday, April 28.\r\nThe earnings report and subsequent call will prov… [+743 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "MacRumors"
+    },
+    "author": "Juli Clover",
+    "title": "Hands-On With Apple's Most Lackluster Smartphone: The 2022 iPhone SE",
+    "description": "Apple last week introduced the 2022 iPhone SE, an upgraded version of its low-cost smartphone. The ‌2022 iPhone SE‌ looks identical to the 2020 model, featuring only internal upgrades, and it is arguably Apple's most lackluster ‌iPhone‌. So who is it for? Rea…",
+    "url": "https://www.macrumors.com/2022/03/29/hands-on-iphone-se/",
+    "urlToImage": "https://images.macrumors.com/t/hX051yTrBaMZhEy6mxT4irwpYFc=/3840x/article-new/2022/03/iphone-se-7.jpg",
+    "publishedAt": "2022-03-29T17:51:46Z",
+    "content": "Apple last week introduced the 2022 iPhone SE, an upgraded version of its low-cost smartphone. The ‌2022 iPhone SE‌ looks identical to the 2020 model, featuring only internal upgrades, and it is argu… [+2686 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "MacRumors"
+    },
+    "author": "Juli Clover",
+    "title": "Moment Debuts New MagSafe Mount Options",
+    "description": "Moment today added to its existing line of MagSafe-compatible mounts, introducing three new magnetic mounts that can be used with Apple's iPhones. There's a mounting option for filmmakers, a mount that lets you put your iPhone anywhere, and an adapter for usi…",
+    "url": "https://www.macrumors.com/2022/03/29/moment-magsafe-mount-options/",
+    "urlToImage": "https://images.macrumors.com/t/hPLfdRXIPkqODtiEdvHGaXGQOo4=/2000x/article-new/2022/03/magsafe-anywhere-strap.jpg",
+    "publishedAt": "2022-03-29T16:00:59Z",
+    "content": "Moment today added to its existing line of MagSafe-compatible mounts, introducing three new magnetic mounts that can be used with Apple's iPhones. There's a mounting option for filmmakers, a mount th… [+1149 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "CNET"
+    },
+    "author": "Adam Benjamin",
+    "title": "iOS 15.4: Every New Feature, From Universal Control to Mask-Friendly Face ID - CNET",
+    "description": "Apple's latest update brings 37 new emoji to your iPhone, too.",
+    "url": "https://www.cnet.com/tech/services-and-software/ios-15-4-every-new-feature-from-universal-control-to-mask-friendly-face-id/",
+    "urlToImage": "https://www.cnet.com/a/img/resize/e510532b2c90723b12d010579406e3fc1207b0e7/2021/08/04/b73921a5-25b6-4b22-a5aa-b7dbcd30bba6/iphone-ios-15-2021-cnet-09.jpg?auto=webp&fit=crop&height=630&width=1200",
+    "publishedAt": "2022-03-29T20:59:07Z",
+    "content": "The latest iOS upgrade brings dozens of new emoji to your iPhone.\r\nSarah Tew/CNET\r\nApple's iOS 15.4 has been out and available to the public for a couple weeks, and if you haven't yet installed the n… [+4958 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "MarketBeat"
+    },
+    "author": "Melissa Brock",
+    "title": "3 Best Fintech Stocks for a Portfolio Boost",
+    "description": "Rising interest rates and higher inflation means you're looking for more opportunities to invest, maybe in niche markets. Why not consider fintech, short for \"financial technology.\"",
+    "url": "https://www.marketbeat.com/originals/3-best-fintech-stocks-for-a-portfolio-boost/",
+    "urlToImage": "https://assets.entrepreneur.com/providers/marketbeat/hero-image-marketbeat-423314.jpeg",
+    "publishedAt": "2022-03-29T06:00:00Z",
+    "content": "Rising interest rates and higher inflation means you're looking for more opportunities to invest, maybe in niche markets. Why not consider fintech, short for \"financial technology.\" \r\nDepositphotos.c… [+6991 chars]"
+    }
+    ]
+    }
+],
+"top":[
+  {
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Frederic Lardinois",
+    "title": "Cyberpion raises $27M Series A for its external attack surface management platform",
+    "description": "Cyberpion is announcing a $27 million Series A round for its external attack surface management and protection service today.",
+    "url": "https://techcrunch.com/2022/03/30/cyberpion-raises-27m-series-a-for-its-external-attack-surface-management-platform/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1296451458.jpg?w=600",
+    "publishedAt": "2022-03-30T11:00:53Z",
+    "content": "It’s no secret that digital supply chains are increasingly under attack as hackers look to use this vector to get access to company networks and confidential information. But that also means business… [+3206 chars]"
+    },
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Brian Heater",
+    "title": "Can robotic hives help save the world’s bees?",
+    "description": "Beewise offers a robotic solution the problem of disappearing bee colonies.",
+    "url": "https://techcrunch.com/2022/03/30/can-robotic-hives-save-the-worlds-bees/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/03/Beehome.jpg?w=600",
+    "publishedAt": "2022-03-30T11:00:47Z",
+    "content": "Heres a bummer of a statistic for you: Around 30% of bee colonies disappear every year. Scientists coined the phrase “colony collapse disorder” (CCD) to describe whats been a devastating ongoing tren… [+2151 chars]"
+    },
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Frederic Lardinois",
+    "title": "Wing Security launches its end-to-end SaaS security platform, raises $26M",
+    "description": "As businesses increasingly rely on an ever-growing number of SaaS products, it has become imperative for security teams to get a better understanding of which applications a company’s employees are actually using and the risks associated with those. It’s no s…",
+    "url": "https://techcrunch.com/2022/03/30/wing-security-launches-its-end-to-end-saas-security-platform-raises-26m/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/03/Roei-Shor-Photography-2-22.jpg?w=711",
+    "publishedAt": "2022-03-30T11:00:26Z",
+    "content": "As businesses increasingly rely on an ever-growing number of SaaS products, it has become imperative for security teams to get a better understanding of which applications a company’s employees are a… [+4339 chars]"
+    },
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Tage Kene-Okafor",
+    "title": "Flutterwave backs UK fintech Dapio in $3.4M round for its contactless payments play",
+    "description": "Dapio, the U.K.-based cashless payment solutions provider for businesses, today announced that it has raised $3.4 million to fuel the launch of its “Tap to Pay” solution for Android users in the U.K. and Europe. African payments giant Flutterwave co-led the g…",
+    "url": "https://techcrunch.com/2022/03/30/flutterwave-backs-uk-fintech-dapio-in-3-4m-round-for-its-contactless-payments-play/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/03/PhotoPictureResizer_220330_094220279_crop_2420x1424.png?w=680",
+    "publishedAt": "2022-03-30T09:00:08Z",
+    "content": "Dapio, the U.K.-based cashless payment solutions provider for businesses, today announced that it has raised $3.4 million to fuel the launch of its “Tap to Pay” solution for Android users in the U.K.… [+4910 chars]"
+    },
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Mike Butcher",
+    "title": "Builder.ai raises $100M Series C led by Insight Partners to scale up its software automation",
+    "description": "When we started covering Builder.ai a few years ago, the startup was tapping into a new wave of businesses wanting their own native apps. The previous wave of agency-built and outsourced apps was waining, and Builder.ai realized it could tap into this trend b…",
+    "url": "https://techcrunch.com/2022/03/30/builder-ai-raises-100m-series-c-led-by-insight-partners-to-scale-up-its-software-automation/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/04/builder-studio-store.jpg?w=711",
+    "publishedAt": "2022-03-30T08:59:03Z",
+    "content": "When we started covering Builder.ai a few years ago, the startup was tapping into a new wave of businesses wanting their own native apps. The previous wave of agency-built and outsourced apps was wai… [+4207 chars]"
+    },
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Manish Singh",
+    "title": "India's Slice gears up to take on PhonePe and Google Pay with UPI support",
+    "description": "A new player is preparing to enter India’s crowded and yet duopoly-sided UPI payments market. Bengaluru-headquartered Slice, which became a unicorn last year, plans to introduce UPI payments for its users within weeks, according to a source familiar with the …",
+    "url": "https://techcrunch.com/2022/03/30/slice-upi-phonepe-google-pay-india-mobile-payments/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/11/slice-india-rajan-bajaj.jpg?w=764",
+    "publishedAt": "2022-03-30T08:19:00Z",
+    "content": "A new player is preparing to enter Indias crowded and yet duopoly-sided UPI payments market.\r\nBengaluru-headquartered Slice, which became a unicorn last year, plans to introduce UPI payments for its … [+3689 chars]"
+    },
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Brian Heater",
+    "title": "Dyson is betting you’ll want to strap an air purifier to your face",
+    "description": "Dyson is betting you’ll want to strap an air purifier to your face",
+    "url": "https://techcrunch.com/2022/03/29/dyson-is-betting-youll-want-to-strap-an-air-purifier-to-your-face/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/03/Screen-Shot-2022-03-24-at-5.41.59-PM.jpg?w=532",
+    "publishedAt": "2022-03-30T05:00:12Z",
+    "content": "Air. I love it, you love it. Were all out here walking around in it all day, filling our lungs and blood with the stuff. We cant get enough of it. But that beautiful, wonderful, life-saving air that … [+2586 chars]"
+    },
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Jaclyn Trop, Kirsten Korosec",
+    "title": "The tech inside the new Lotus Eletre EV hints at autonomous driving ambitions",
+    "description": "Lotus unveiled Tuesday a battery-electric “hyper” SUV called the Eletre — the first of a trio of EVs Lotus plans to launch over the next four years. The upshot? The Eletre, which means “coming to life,” is the British brand’s first utility vehicle and a cruci…",
+    "url": "https://techcrunch.com/2022/03/29/the-tech-inside-the-new-lotus-eletre-ev-hints-at-autonomous-driving-ambitions/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/03/09_Lotus_Eletre_Yellow_Studio_Front.jpg?w=600",
+    "publishedAt": "2022-03-30T01:10:23Z",
+    "content": "Lotus unveiled Tuesday a battery-electric “hyper” SUV called the Eletre — the first of a trio of EVs Lotus plans to launch over the next four years.\r\nThe upshot? The Eletre, which means “coming to li… [+5642 chars]"
+    },
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Lucas Matney",
+    "title": "The 25 crypto startups that Y Combinator is backing in its W22 batch",
+    "description": "Crypto was big at YC this batch. Y Combinator Demo Days returned yet again with another ballooning heap of startups. In the old days, a gaggle of TechCrunch reporters would go to the Demo Day in person, write up the presentations of each startup and hobnob wi…",
+    "url": "https://techcrunch.com/2022/03/29/the-25-crypto-startups-that-y-combinator-is-backing-in-its-w22-batch/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/03/YC-DD-2022-crypto.jpg?w=711",
+    "publishedAt": "2022-03-30T00:58:46Z",
+    "content": "What it says it does: “Courtyard stores physical collectibles (trading cards, sneakers, watches, etc.) in secured vaults, creates a 3D representation of the asset and mints it as an NFT on the blockc… [+9216 chars]"
+    },
+    {
+    "source": {
+    "id": "techcrunch",
+    "name": "TechCrunch"
+    },
+    "author": "Natasha Mascarenhas, Alyssa Stringer",
+    "title": "Everything you need to know about YC Winter 2022 Demo Day, part 1",
+    "description": "With 414 companies in total presenting at YC Demo Day 2022, TechCrunch decided to create a slew of YC Demo Day trend pieces for you to parse through the cohort.",
+    "url": "https://techcrunch.com/2022/03/29/everything-you-need-to-know-about-y-combinators-winter-2022-demo-day-part-1/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/03/YC-DD-March-2022-general.jpg?w=711",
+    "publishedAt": "2022-03-30T00:35:44Z",
+    "content": "The TechCrunch team spent today covering the first day of Y Combinator’s Winter 2022 Demo Day, which featured half of the 394 companies that plan to virtually present. Since the overall batch is bigg… [+4139 chars]"
+    }
+    ]
+    }
+],
+"others":[
+  {
+    "status": "ok",
+    "totalResults": 641,
+    "articles": [
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Keith Zhai and Liza Lin",
+    "title": "China Plans New Restrictions in Its Booming Live-Streaming Sector - The Wall Street Journal",
+    "description": "<ol><li>China Plans New Restrictions in Its Booming Live-Streaming Sector  The Wall Street Journal\r\n</li><li>China's next 'crackdown' is on live-streaming  ForexLive\r\n</li><li>China plans new restrictions for its live-streaming sector - WSJ  Reuters\r\n</li><li…",
+    "url": "https://www.wsj.com/articles/china-plans-new-restrictions-in-its-booming-live-streaming-sector-11648603781",
+    "urlToImage": "https://images.wsj.net/im-514661/social",
+    "publishedAt": "2022-03-30T01:29:00Z",
+    "content": "SINGAPOREChina is planning new curbs on the countrys $30 billion live-streaming industry, according to people familiar with the matter, renewing a regulatory campaign aimed at reining in technology c… [+427 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Anne Tergesen and Richard Rubin",
+    "title": "401(k) Savings Plans Get a Boost in Bipartisan Retirement Bill - The Wall Street Journal",
+    "description": "<ol><li>401(k) Savings Plans Get a Boost in Bipartisan Retirement Bill  The Wall Street Journal\r\n</li><li>‘Transformative’ retirement reform package passes the House and heads to the Senate  Yahoo Finance\r\n</li><li>House Votes to Expand Tax Benefits for Retir…",
+    "url": "https://www.wsj.com/articles/401k-secure-retirement-bill-house-2022-11648583270",
+    "urlToImage": "https://images.wsj.net/im-513745/social",
+    "publishedAt": "2022-03-29T23:03:00Z",
+    "content": "Americans could stash more in their 401(k)s and sit on their nest eggs longer under a House bill that aims to boost individual retirement savings. \r\nThe bill, passed Tuesday by a vote of 414 to 5, ra… [+399 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Jon Kamp and Brianna Abbott",
+    "title": "Omicron BA.2 Variant Is Dominant Covid-19 Strain in U.S., CDC Estimates - The Wall Street Journal",
+    "description": "<ol><li>Omicron BA.2 Variant Is Dominant Covid-19 Strain in U.S., CDC Estimates  The Wall Street Journal\r\n</li><li>Covid: 'Stealth' Omicron variant BA2 is now globally dominant | WION Originals  WION\r\n</li><li>Omicron subvariant BA.2 is now the dominant strai…",
+    "url": "https://www.wsj.com/articles/omicron-ba-2-variant-is-dominant-in-u-s-cdc-estimates-11648570107",
+    "urlToImage": "https://images.wsj.net/im-513824/social",
+    "publishedAt": "2022-03-29T20:51:00Z",
+    "content": "The Omicron BA.2 variant represents more than half of new Covid-19 cases in the U.S., the latest federal estimates show, as signs suggest infections are edging higher again in parts of the Northeast.… [+357 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Charity L. Scott",
+    "title": "Lululemon Posts Stronger Sales, Profit Despite Omicron Weighing on Business - The Wall Street Journal",
+    "description": "Lululemon Posts Stronger Sales, Profit Despite Omicron Weighing on Business  The Wall Street Journal",
+    "url": "https://www.wsj.com/articles/lululemon-posts-stronger-sales-profit-despite-omicron-weighing-on-business-11648585574",
+    "urlToImage": "https://images.wsj.net/im-514288/social",
+    "publishedAt": "2022-03-29T20:42:00Z",
+    "content": "Lululemon Athletica Inc. posted higher revenue and profit for the fourth quarter, becoming one of the few direct-to-consumer brands to find growth amid rampant supply-chain challenges and the emergen… [+282 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Jared Malsin",
+    "title": "Roman Abramovich Makes Public Debut in Russia-Ukraine Peace Talks - The Wall Street Journal",
+    "description": "<ol><li>Roman Abramovich Makes Public Debut in Russia-Ukraine Peace Talks  The Wall Street Journal\r\n</li><li>Roman Abramovich “poisoned” at peace talks with Ukraine - BBC News  BBC News\r\n</li><li>Putin outraged by Zelenskyy note delivered by Russian oligarch …",
+    "url": "https://www.wsj.com/articles/roman-abramovich-makes-public-debut-in-russia-ukraine-peace-talks-11648581111",
+    "urlToImage": "https://images.wsj.net/im-514329/social",
+    "publishedAt": "2022-03-29T20:00:00Z",
+    "content": "ISTANBULA few weeks ago, Roman Abramovich was the worlds best-known Russian oligarch, moving to sell or transfer some of his trophy assets, like English soccer powerhouse Chelsea FC, amid an array of… [+572 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "James Freeman",
+    "title": "Go Tech! - The Wall Street Journal",
+    "description": "MIT brings back standardized testing for admissions.",
+    "url": "https://www.wsj.com/articles/go-tech-11648580893",
+    "urlToImage": "https://images.wsj.net/im-514206/social",
+    "publishedAt": "2022-03-29T19:08:00Z",
+    "content": "People can debate whether the Massachusetts Institute of Technology is the finest university in the world. But this week MIT is making a very strong case that it is at least the finest school in Camb… [+5374 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "James R. Hagerty",
+    "title": "Marketing Maverick Pitched Laser Mousetrap and Bone Fone Radio",
+    "description": "Joseph Sugarman, who has died at age 83, made up for his flops with winners like early pocket calculators and BluBlocker sunglasses",
+    "url": "https://www.wsj.com/articles/marketing-maverick-pitched-laser-mousetrap-and-bone-fone-radio-11648575261",
+    "urlToImage": "https://images.wsj.net/im-513477/social",
+    "publishedAt": "2022-03-29T17:36:47Z",
+    "content": "In 1979,\r\nJoseph Sugarman\r\npromoted mail-order sales of the Bone Fone, a horseshoe-shaped radio worn around the neck.Music would resonate through your bonesall the way to the sensitive bones of your … [+4524 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "The Wall Street Journal",
+    "title": "The Music Catalog Business Is Booming",
+    "description": "Catalog valuations have shot up in recent years. In 2021, investors paid multiples equivalent to around 22 times the net publisher’s share of royalties—a standard industry measure of income—up from 11 times in 2015, data from investment bank Shot Tower Capita…",
+    "url": "https://www.wsj.com/articles/music-fans-are-drowning-out-the-fed-11648548501",
+    "urlToImage": "https://images.wsj.net/im-512492/social",
+    "publishedAt": "2022-03-29T15:31:00Z",
+    "content": "Music assets are a hit when interest rates are low, but will investors change their tune as the Fed introduces hikes?\r\nMoney has been pouring into music catalogs. Major record labels, private-equity … [+278 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Jared S. Hopkins And Stephanie Armour",
+    "title": "FDA Authorizes Second Covid-19 Booster Shot for Adults 50 and Older",
+    "description": "Under the authorization, adults 50 years old and up can get the shots at least four months after a first booster dose.",
+    "url": "https://www.wsj.com/articles/fda-authorizes-second-covid-19-booster-shot-for-older-adults-11648564824",
+    "urlToImage": "https://images.wsj.net/im-510512/social",
+    "publishedAt": "2022-03-29T14:42:15Z",
+    "content": "Older adults will be eligible for a second Covid-19 booster shot under a decision by federal health regulators, who are expected to authorize the additional shots for the broader population in the fa… [+172 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Megha Mandavia",
+    "title": "Knives Out in India: Zomato Needs to Expand the Menu, Quickly - The Wall Street Journal",
+    "description": "Indian tech heavyweight Zomato has built a foundation in food delivery. But its competition is moving aggressively.",
+    "url": "https://www.wsj.com/articles/knives-out-in-india-zomato-needs-to-expand-the-menu-quickly-11648561471",
+    "urlToImage": "https://images.wsj.net/im-513987/social",
+    "publishedAt": "2022-03-29T13:44:00Z",
+    "content": "Indias food ordering platform Zomato has had an interesting two weeks. It launched its own pilot to deliver food within 10 minutes. It is reportedly considering gobbling up a separate instant grocery… [+348 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Joyu Wang and Alastair Gale",
+    "title": "Taiwan Looks to Ukraine War for Ideas to Defend Against China...",
+    "description": "Taiwan Looks to Ukraine War for Ideas to Defend Against China...\r\n\n \n \n \n (Second column, 7th story, link)",
+    "url": "https://www.wsj.com/articles/taiwan-looks-to-ukraine-war-for-ideas-to-defend-against-china-11648557508",
+    "urlToImage": "https://images.wsj.net/im-513983/social",
+    "publishedAt": "2022-03-29T13:10:38Z",
+    "content": "TAIPEIRussias invasion of Ukraine is leading Taiwan to rethink how it would defend itself in the event of an invasion by China, stirring new debates over weapons, military tactics and even whether to… [+313 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Ryan Tracy",
+    "title": "DOJ Backs Antitrust Bill Targeting AMAZON, GOOGLE, APPLE...",
+    "description": "The Justice Department told lawmakers in a letter that the rise of dominant platforms presents a threat to open markets and competition.",
+    "url": "https://www.wsj.com/articles/doj-backs-antitrust-bill-targeting-amazon-google-apple-11648519385",
+    "urlToImage": "https://images.wsj.net/im-513882/social",
+    "publishedAt": "2022-03-29T12:22:39Z",
+    "content": "WASHINGTONThe Justice Department Monday endorsed legislation forbidding large digital platforms such as Amazon and Google from favoring their own products and services over competitors, marking the B… [+463 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Will Horner",
+    "title": "Stocks Rise, Bond Yields Inch Closer to Recession Warning - The Wall Street Journal",
+    "description": "<ol><li>Stocks Rise, Bond Yields Inch Closer to Recession Warning  The Wall Street Journal\r\n</li><li>Dow rises 300 points as traders monitor potential progress in Russia-Ukraine negotiations  CNBC\r\n</li><li>Stock market news live updates: Stocks extend gains …",
+    "url": "https://www.wsj.com/articles/global-stocks-markets-dow-update-03-29-2022-11648539428",
+    "urlToImage": "https://images.wsj.net/im-513927/social",
+    "publishedAt": "2022-03-29T12:09:00Z",
+    "content": "U.S. stock indexes rose at the opening and bond yields edged closer to flashing a recessionary warning signal Tuesday, as investors girded for a period of slower growth and higher interest rates. \r\nT… [+214 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "John Jurgensen",
+    "title": "Assault Prompts Worry From Comedians...",
+    "description": "Assault Prompts Worry From Comedians...\r\n\n \n \n \n (Third column, 2nd story, link)\r\n\n \r\n\n \r\n\n \n Related stories:Body language expert: Will Smith slap was 'choreographed Hollywood display'...\r\nA-list ovation at VANITY FAIR party...\r\nCHARLAMAGNE: Joke 'Very Small…",
+    "url": "https://www.wsj.com/articles/will-smith-chris-rock-comedians-oscars-slap-11648500426",
+    "urlToImage": "https://images.wsj.net/im-513439/social",
+    "publishedAt": "2022-03-29T12:07:40Z",
+    "content": "When Will Smith retaliated for a joke at the Oscars by slapping Chris Rock, fellow comedians saw the incident from two angles: as a rich source of material for themselves, and as an assault on one of… [+5036 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Anna Wilde Mathews",
+    "title": "UnitedHealth to Buy Home-Health Firm LHC Group for $5.4 Billion - The Wall Street Journal",
+    "description": "The $5.4 billion deal marks the latest foray by a managed-care company into a category said to promise lower costs than hospitals and nursing homes.",
+    "url": "https://www.wsj.com/articles/unitedhealth-to-buy-home-health-firm-lhc-group-for-5-4-billion-11648550701",
+    "urlToImage": "https://images.wsj.net/im-513564/social",
+    "publishedAt": "2022-03-29T10:45:00Z",
+    "content": "UnitedHealth Group Inc. has agreed to buy LHC Group Inc. for about $5.4 billion in cash, in the latest tie-up linking a managed-care company to the home-health business.\r\nThe acquisition by UnitedHea… [+246 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "James Marson and Jared Malsin",
+    "title": "Ukraine and Russia Hold Talks as Zelensky Criticizes West on Sanctions, Arms - The Wall Street Journal",
+    "description": "The Ukrainian president decried Western reluctance to tighten sanctions or provide heavier weapons, as delegations from Kyiv and Moscow met for cease-fire negotiations in Turkey.",
+    "url": "https://www.wsj.com/articles/ukraine-and-russia-hold-talks-as-zelensky-criticizes-west-on-sanctions-arms-11648549561",
+    "urlToImage": "https://images.wsj.net/im-513963/social",
+    "publishedAt": "2022-03-29T10:26:00Z",
+    "content": "Ukrainian President Volodymyr Zelensky escalated his criticism of Western leaders for their reluctance to tighten sanctions on Russia or provide heavier weapons for Ukraines defense, as delegations f… [+324 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Alexander Osipovich And Annamaria Andriotis",
+    "title": "Russia Built Parallel Payments System That Escaped Western Sanctions",
+    "description": "Rocked by sanctions following its annexation of Crimea, Russia built  its own payments network, Mir, ultimately taking the sting out of exists by Visa and Mastercard.",
+    "url": "https://www.wsj.com/articles/russia-built-parallel-payments-system-that-escaped-western-sanctions-11648510735",
+    "urlToImage": "https://images.wsj.net/im-512514/social",
+    "publishedAt": "2022-03-29T09:33:00Z",
+    "content": "Western sanctions have disrupted nearly every part of Russias financial system, but there is one big exception.\r\nThe domestic-payments system continued to work smoothly after Visa Inc. and Mastercard… [+304 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Julie Bykowicz",
+    "title": "Business, Highway Lobbies Fight Gas-Tax Holidays - The Wall Street Journal",
+    "description": "Decreasing gas taxes won’t necessarily lead to savings for motorists and could limit infrastructure improvements, trade groups say",
+    "url": "https://www.wsj.com/articles/business-highway-lobbies-fight-gas-tax-holidays-11648546202",
+    "urlToImage": "https://images.wsj.net/im-513765/social",
+    "publishedAt": "2022-03-29T09:30:00Z",
+    "content": "WASHINGTONConstruction and business groups are trying to hold back a wave of state and federal gas-tax decreases that they say could jeopardize much-needed road and bridge improvements, including pro… [+315 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Allison Pohle, Lauren Weber",
+    "title": "Business Travel Lives Again, as Many Are Hitting the Road - The Wall Street Journal",
+    "description": "Corporate travel transactions are up significantly over the past nine weeks, with small and medium-size companies driving the acceleration",
+    "url": "https://www.wsj.com/articles/business-travel-covid-omicron-airlines-hotels-conferences-11648490926",
+    "urlToImage": "https://images.wsj.net/im-510753/social",
+    "publishedAt": "2022-03-29T09:30:00Z",
+    "content": "Business travelers are hitting the road again.After Covid-19s Omicron wave suppressed travel volumes in January, transactions are up significantly over the past nine weeks, according to SAP Concur, a… [+7080 chars]"
+    },
+    {
+    "source": {
+    "id": "the-wall-street-journal",
+    "name": "The Wall Street Journal"
+    },
+    "author": "Bryan Mena",
+    "title": "Job Openings Hover Near Record Highs - The Wall Street Journal",
+    "description": "Job Openings Hover Near Record Highs  The Wall Street JournalView Full Coverage on Google News",
+    "url": "https://www.wsj.com/articles/job-openings-hover-near-record-highs-11648546202",
+    "urlToImage": "https://images.wsj.net/im-513552/social",
+    "publishedAt": "2022-03-29T09:30:00Z",
+    "content": "Demand for workers cooled slightly for the second straight month in February but continued to dwarf the number of people looking for employment.\r\nThe Labor Department on Tuesday reported 11.3 million… [+293 chars]"
+    }
+    ]
+    }
+]
+
+}
+
+
+
+
+
+
+
+
+
+
+

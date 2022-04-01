@@ -1,0 +1,42 @@
+<ion-header>
+  <div class="title">
+    <img src="../../assets/ivis.png" height="38px">
+    <ion-button (click)="logout()" style="width: 100px;">Logout</ion-button>
+  </div>
+</ion-header>
+
+<ion-content >
+
+
+
+<div class="cont">
+   <div style="display: block; width: 100%; overflow-y: scroll;">
+
+    <ion-button ion-button full icon-left (click)="startTracking()" *ngIf="!isTracking" style="margin-bottom: 10px;">
+      <ion-icon name="locate"></ion-icon>
+      Start Tracking
+    </ion-button>
+  
+    <ion-button ion-button full icon-left (click)="stopTracking()" *ngIf="isTracking">
+      <ion-icon name="locate"></ion-icon>
+       &nbsp; Stop Tracking
+    </ion-button>
+  
+    <div #map id="map"></div>
+  
+    <ion-list>
+      <ion-list-header>History</ion-list-header>
+      <ion-item *ngFor="let route of previousTracks">
+        <div style="width: 100%; text-align-last: justify;">
+          {{route.finished | date}}, {{route.path.length}} Waypoints 
+          <ion-button  clear item-end (click)="showHistory(route.path)">View Route</ion-button>
+        </div>
+      </ion-item>
+    </ion-list>
+   </div>
+</div>
+
+<ion-img src="../../assets/clear.svg" class="refreshbtn" (click)="clearStorage()"></ion-img>
+
+
+</ion-content>

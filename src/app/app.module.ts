@@ -2,7 +2,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 import { StreamingMedia } from '@ionic-native/streaming-media/ngx';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
@@ -11,13 +10,21 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './services/sharedModule';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { AndroidPermissions } from '@awesome-cordova-plugins/android-permissions/ngx';
+import { IonicStorageModule } from '@ionic/storage-angular';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule,SharedModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule, 
+    HttpClientModule,SharedModule,
+    IonicStorageModule.forRoot()
+  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, StreamingMedia,
     Geolocation,
     AndroidPermissions,
@@ -59,3 +66,26 @@ Notes:
 </network-security-config> -->
 3. always include  android:usesCleartextTraffic="true" permission to access HTTP (add inside edit-config tag -> inside aplication tag )
 */
+
+
+
+
+/**
+ * For geolocation tracking
+ * ionic cordova plugin add cordova-sqlite-storage
+ * ionic cordova plugin add cordova-plugin-geolocation --variable GEOLOCATION_USAGE_DESCRIPTION="To track route"
+ * npm install --save @ionic-native/geolocation
+ * ** add at bottom of config.xml file before </widget>
+ * <edit-config file="*-info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+ *  <string>This app wants to track your location</string>
+ * </edit-config>
+ * 
+ * import Geolocation and IonicStorageModule in app.module  
+ * put in imports IonicStorageModule.forRoot() and Geolocation in providers
+ * 
+ * in index.html put following to get google map in your app
+ * <script src="http://mpas.google.com/maps/api/js?key=YOUR_API_KEY_HERE"></script>
+ * 
+ * 
+ * 
+ */
