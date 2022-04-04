@@ -37,7 +37,7 @@ export class DashboardPage implements OnInit {
     public alertservice: AlertController) { }
 
   ngOnInit() {
- 
+    // console.log(this.dataservice.DateFormatter.formatDate(new Date('2021-07-22 23:59:59'), 'YYYY-MM-DD HH:mm:ss')); 
   }
   /*  this is important */
   ionViewWillEnter(){
@@ -50,7 +50,7 @@ export class DashboardPage implements OnInit {
   }
   checklocation(){
     this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION).then(
-      result => {console.log('Has permission?',result.hasPermission)
+      result => {
         if(result.hasPermission == false){
           this.router.navigateByUrl('/location')
         }
@@ -91,6 +91,7 @@ export class DashboardPage implements OnInit {
           this.savedstatus = x
         }
       }
+
       this.geolocation.getCurrentPosition().then((resp) => {
         setTimeout(() => {
           this.showLoader = false;
@@ -102,7 +103,7 @@ export class DashboardPage implements OnInit {
          console.log('Error getting location', error);
        });
     }else{
-      alert("Latitude and Longitude already captured")
+      this.dataservice.presentAlert("Error !","Latitude and Longitude already captured", "Already Registered!")
     }
   }
   getAccount(id:any){
@@ -112,23 +113,20 @@ export class DashboardPage implements OnInit {
       if(this.latitude,this.longitude,this.currentlatitude,this.currentlongitude){
         var x = this.distance(this.latitude,this.longitude,this.currentlatitude,this.currentlongitude, "K");
         if(x<0.2){
+          // this.currenTicket.latlongverified = "T";
           this.currenTicket.latitude =this.currentlatitude;
           this.currenTicket.longitude =this.currentlongitude;
           this.showLoader=true;
           this.dataservice.updatecords(this.currenTicket).subscribe((res:any)=>{
             this.showLoader=false;
-            alert(res.Message)
+            this.dataservice.presentAlert("Response !","",res.Message)
           })
         }else{
-          // alert(`Observed Latitude and Longitude do not match with site data. Please contact Co-Ordinator / Manager \n \n \n 
-          // Current Latitude is ${this.currentlatitude} \n 
-          // Current Longitude is ${this.currentlongitude}`)
-
+          // this.currenTicket.latlongverified = "T";
+          this.dataservice.updatecords(this.currenTicket).subscribe((res:any)=>{
+            this.showLoader=false;
+          })
           this.presentAlert(`Observed Latitude and Longitude do not match with site data. Please Contact Site Manager Team \n <br/>`)
-
-          // 1)  +91-91542 04944 \n <br/>
-          // 2)  +91-91549 05657 \n <br/>
-          // 3)  +91-91210 55728
         }
       }
     })
@@ -157,7 +155,6 @@ export class DashboardPage implements OnInit {
     var rlat2 = toRadians(lat2) // Convert degrees to radians
     var difflat = rlat2 - rlat1 // Radian difference (latitudes)
     var difflon = toRadians(lon1 - lon2) // Radian difference (longitudes)
-    console.log(2 * R * Math.asin(Math.sqrt(Math.sin(difflat / 2) * Math.sin(difflat / 2) + Math.cos(rlat1) * Math.cos(rlat2) * Math.sin(difflon / 2) * Math.sin(difflon / 2))))
     return 2 * R * Math.asin(Math.sqrt(Math.sin(difflat / 2) * Math.sin(difflat / 2) + Math.cos(rlat1) * Math.cos(rlat2) * Math.sin(difflon / 2) * Math.sin(difflon / 2)))
   }
 
@@ -213,7 +210,7 @@ export class DashboardPage implements OnInit {
 
   async presentAlert(msg:any) { 
     const alert = document.createElement('ion-alert');
-    alert.cssClass = 'my-custom-class';
+    alert.cssClass = 'alert';
     alert.header = 'Error !';
     alert.subHeader = 'Co-ordinates do not match';
     alert.message = msg;
@@ -238,10 +235,10 @@ export class DashboardPage implements OnInit {
     document.body.appendChild(alert);
     await alert.present();
     await alert.onDidDismiss().then(()=>{
-
     });
-   
   }
+
+
 
 
 }

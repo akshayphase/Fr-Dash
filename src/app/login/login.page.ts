@@ -39,21 +39,23 @@ export class LoginPage implements OnInit {
             this.dataservice.storeEncrData("user", res);
             this.router.navigateByUrl('/dashboard');
           }else{
-            this.alertService.success("You are not authorized to login")
+            this.dataservice.presentAlert("Error !","You are not authorized to login", "Unauthorized user!")
           }
         }else{
-          this.alertService.success("Login failed. Please Enter correct details")
+          this.dataservice.presentAlert("Error !","Login failed. Please Enter correct details", "Wrong Username/ Password")
         }
       },(error)=>{
         console.log((error))
         this.showLoader=false;
-        this.alertService.success(error.message)
+        this.dataservice.presentAlert("Error !",error.message, "Error")
 
       })
     }else{
       this.showLoader=false;
-      this.alertService.success("Please enter details")
+      this.dataservice.presentAlert("Error !","Please enter details", "Enter Username/ Password")
     }
   }
+
+
 
 }

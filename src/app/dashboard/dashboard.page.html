@@ -40,6 +40,13 @@
               (savedstatus[i]?.status == 'registered' && savedstatus[i]?.id == ticket.id) ? 'dot green' :
               (savedstatus[i]?.status == 'unregistered' && savedstatus[i]?.id == ticket.id) ? 'dot red' :'dot transparent'
               "></div></td>
+
+              <!-- <td style="text-align: -webkit-center;" ><div class="dot" 
+                [className]="
+                (ticket.latlongverified == 'T' && ticket.latitude != null) ? 'dot green' :
+                (ticket.latlongverified == 'T' && ticket.latitude == null) ? 'dot red' :
+                (ticket.latlongverified == 'F' && ticket.latitude != null) ?  'dot red' : 'dot'
+                "></div></td> -->
              <td style="text-align: center;"><button (click)="saveCoOrds(ticket)" >Capture</button></td>
             </tr>
 

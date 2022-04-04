@@ -25,8 +25,8 @@ export class DataService {
   };
 
   
-  baseurl = "http://smstaging.iviscloud.net:8090/frdashboard/";
-  // baseurl = "http://localhost:8080/frdashboard/";
+  // baseurl = "http://smstaging.iviscloud.net:8090/frdashboard/";
+  baseurl = "http://localhost:8080/";
   // baseurl = "http://10.0.2.192:8080/frdashboard/";
 
 
@@ -101,4 +101,99 @@ export class DataService {
     }
     return true;
   }
-}
+
+
+  async presentAlert(title:any,msg:any, sub:any) { 
+    const alert = document.createElement('ion-alert');
+    alert.cssClass = 'alert';
+    alert.header = title;
+    alert.subHeader = sub;
+    alert.message = msg;
+    alert.buttons= [
+      {
+	      text: "OK",
+        role : 'cancel',
+	    }
+	  ],
+    document.body.appendChild(alert);
+    await alert.present();
+    await alert.onDidDismiss().then(()=>{
+    });
+  }
+
+
+
+  DateFormatter = {
+    monthNames: [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ],
+    dayNames: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    formatDate: function (date, format) {
+      var self = this;
+      format = self.getProperDigits(format, /d+/gi, date.getDate());
+      format = self.getProperDigits(format, /M+/g, date.getMonth() + 1);
+      format = format.replace(/y+/gi, function (y) {
+        var len = y.length;
+        var year = date.getFullYear();
+        if (len == 2)
+          return (year + "").slice(-2);
+        else if (len == 4)
+          return year;
+        return y;
+      })
+      format = self.getProperDigits(format, /H+/g, date.getHours());
+      format = self.getProperDigits(format, /h+/g, self.getHours12(date.getHours()));
+      format = self.getProperDigits(format, /m+/g, date.getMinutes());
+      format = self.getProperDigits(format, /s+/gi, date.getSeconds());
+      format = format.replace(/a/ig, function (a) {
+        var amPm = self.getAmPm(date.getHours())
+        if (a === 'A')
+          return amPm.toUpperCase();
+        return amPm;
+      })
+      format = self.getFullOr3Letters(format, /d+/gi, self.dayNames, date.getDay())
+      format = self.getFullOr3Letters(format, /M+/g, self.monthNames, date.getMonth())
+      return format;
+    },
+    getProperDigits: function (format, regex, value) {
+      return format.replace(regex, function (m) {
+        var length = m.length;
+        if (length == 1)
+          return value;
+        else if (length == 2)
+          return ('0' + value).slice(-2);
+        return m;
+      })
+    },
+    getHours12: function (hours) {
+      // https://stackoverflow.com/questions/10556879/changing-the-1-24-hour-to-1-12-hour-for-the-gethours-method
+      return (hours + 24) % 12 || 12;
+    },
+    getAmPm: function (hours) {
+      // https://stackoverflow.com/questions/8888491/how-do-you-display-javascript-datetime-in-12-hour-am-pm-format
+      return hours >= 12 ? 'pm' : 'am';
+    },
+    getFullOr3Letters: function (format, regex, nameArray, value) {
+      return format.replace(regex, function (s) {
+        var len = s.length;
+        if (len == 3)
+          return nameArray[value].substr(0, 3);
+        else if (len == 4)
+          return nameArray[value];
+        return s;
+      })
+    }
+  }
+
+  datetime(){
+    const d = new Date() // 26.3.2020
+    const dtfUK = new Intl.DateTimeFormat('UK', { year: 'numeric', month: '2-digit', day: '2-digit',
+            hour: '2-digit',minute: '2-digit', second: '2-digit' }); //
+    const dtfUS = new Intl.DateTimeFormat('en', { year: 'numeric', month: '2-digit', day: '2-digit',
+            hour: '2-digit',minute: '2-digit', second: '2-digit' }); //
+    console.log(dtfUS.format(d)); // 08/05/2010 11:45:00 PM
+    console.log(dtfUK.format(d)); // 05.08.2010 23:45:00
+  }
+  
+ }
