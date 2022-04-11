@@ -2,23 +2,16 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  // justify-content: center;
+  // align-items: center;
+  padding-top: 50px;
   text-align: center;
   background: #e7e7e7;
+  color: #123E6F;
   font-weight: 600;
 }
-.loginbox{
-  display: grid;
-}
-input{
-  margin-bottom: 10px;
-  padding: 10px;
-}
-input, ion-button{
-  font-size: 18px;
-}
+
 ion-button{
     --background: #123E6F;
     --color: #767676;
@@ -42,11 +35,11 @@ ion-button{
   display: flex;
   padding: 10px 10px 10px 20px;
 }
+
 .data{
   width: 100vw;
   margin: auto;
-  margin-top: 55px;
-  max-height: -webkit-calc(100vh - (100px));
+  max-height: -webkit-calc(100vh - (60px));
   overflow-y: scroll;
 }
 
@@ -59,6 +52,7 @@ table{
   position:relative;
   width: -webkit-fill-available;
   color: black;
+  margin-bottom: 130px;
 }    
 th{text-transform: capitalize; text-align: center;  border: 1px solid #1f1f1f; padding: 10px 0 !important;
 background: #f6992f;
@@ -114,15 +108,29 @@ td button{
 // td{ border: 1px solid #1f1f1f;}
 // th{ border-bottom:1px}
 tbody tr:active{
-  background: #737473;
+  // background: #13eb13;
   color: #e7e7e7;
+}
+.enternumbers{
+  width: 50px;
+  height: 25px;
+  outline: none;
+  border: none;
+  background-color: #00000000;
+  text-align: center;
 }
 .routebtn{
   --background:red; margin-top:15px;align-self:right; width: auto; font-size: 12px;
   position: absolute;
     bottom: 100px;
-    right: 16px;
+    right: 14px;
+    z-index: 5;
+
 }
+
+
+
+
 
 
 

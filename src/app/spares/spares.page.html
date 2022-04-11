@@ -1,0 +1,48 @@
+<ion-header>
+  <div class="title">
+    <img src="../../assets/ivis.png" height="38px">
+    <ion-button (click)="logout()">Logout</ion-button>
+  </div>
+</ion-header>
+
+<ion-content>
+  <app-loader *ngIf="showLoader"></app-loader>
+
+  <div class="cont">
+
+    <div class="data table table-striped">
+
+      <div class="ttl">
+        Spares Summary for  {{user?.FirstName}}  {{user?.LastName}}
+      </div>
+
+      <table>
+        <thead style="cursor: pointer;">
+          <tr>
+             <th *ngFor="let col of cols" ><span style="margin: 0,25px;">{{col == 'itemTrackingQty' ? col.substring(12): col.substring(4)}}</span></th>
+             <th style="width: 50px;">InHand</th>
+             <th style="width: 50px;">Used</th>
+             <th style="width: 100px;">Action</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let spare of sparesData; let i =index">
+          <tr class="tableElements"  *ngIf="sparesData?.length != 0">
+            <td *ngFor="let col of cols" style="background-color: #a6a6a6;">{{spare[col]}}</td>
+            <td style="width: 50px; background-color: #a6a6a6;" *ngIf="spare.status != 'PushedToFR'">{{spare.frInHandQty}}</td>
+            <td style="width: 50px; background-color: #a6a6a6;" *ngIf="spare.status != 'PushedToFR'">{{spare.frUsedQty}}</td>
+            <td style="width: 50px;" *ngIf="spare.status == 'PushedToFR'"><input type="number" class="enternumbers" placeholder="xx"></td>
+            <td style="width: 50px;" *ngIf="spare.status == 'PushedToFR'"><input type="number" class="enternumbers" placeholder="xx"></td>
+            <td style="width: 100px;text-align: center;"><button (click)="submitSpare(spare, $event)" >Submit</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div *ngIf="sparesData?.length == 0">No Data Available</div>
+    </div>
+    <ion-button class="routebtn" [routerLink]="['/dashboard']">Tickets</ion-button>
+
+    <ion-img src="../../assets/addition.svg" class="refreshbtn" (click)="gotoNewSpare()"></ion-img>
+
+  </div>
+
+</ion-content>
+

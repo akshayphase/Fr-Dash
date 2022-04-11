@@ -24,27 +24,17 @@ export class DataService {
       headers: new HttpHeaders(this.headerDict), 
   };
 
-  
+  baseurl = "https://crm.iviscloud.net/frdashboard/"
   // baseurl = "http://smstaging.iviscloud.net:8090/frdashboard/";
-  baseurl = "http://localhost:8080/";
+  // baseurl = "http://localhost:8080/";
   // baseurl = "http://10.0.2.192:8080/frdashboard/";
-
 
   constructor(private http: HttpClient) { }
 
   login(payload:any){
     let url =this.baseurl+"login";
-    // console.log(url,JSON.stringify(payload), JSON.stringify(this.requestOptions));
     return  this.http.post(url,payload,this.requestOptions);
   }
-
-  login1(payload:any){
-    // let url = "https://live.api.app.nammaflix.in/nammaflix/app/user/login/userName?mobile=8008934466&password=123456"
-    let url="https://live.api.app.nammaflix.in/nammaflix/app/user/mobile/login/password"
-    var body = {name:"somename", password:"somepass"}
-    return this.http.post(url,body);
-  }
-
   getOpenTickets(user:any){
     let url=this.baseurl+"getTickets";
     let payload={
@@ -61,8 +51,18 @@ export class DataService {
     let url = this.baseurl+"updatecoords";
     return this.http.put(url,payload);
   }
-
-
+  getSparesDetails(payload:any){
+    let url=this.baseurl+"getFieldSpares";
+    return this.http.post(url,payload);
+  }  
+  getAddSpareDetails(){
+    let url=this.baseurl+"getSparesInfoForNew";
+    return this.http.get(url);
+  }
+  updateSparesDetails(payload:any){
+    let url=this.baseurl+"updateFieldSpares";
+    return this.http.put(url,payload);
+  }
 
   storeEncrData(storageKey: string, value: any){
     const y = btoa(escape(JSON.stringify(value)));
@@ -85,8 +85,10 @@ export class DataService {
        return null;
      }
   }
-
-
+  getMinDist(){
+    let url = this.baseurl+`getMinDistance`;
+    return this.http.get(url);
+  }
   sessionstatus(){
     var hours = 3; // 0.01 is 35secs
     var now:any = new Date().getTime();
@@ -101,8 +103,6 @@ export class DataService {
     }
     return true;
   }
-
-
   async presentAlert(title:any,msg:any, sub:any) { 
     const alert = document.createElement('ion-alert');
     alert.cssClass = 'alert';
@@ -120,9 +120,7 @@ export class DataService {
     await alert.onDidDismiss().then(()=>{
     });
   }
-
-
-
+  
   DateFormatter = {
     monthNames: [
       "January", "February", "March", "April", "May", "June",
@@ -166,14 +164,8 @@ export class DataService {
         return m;
       })
     },
-    getHours12: function (hours) {
-      // https://stackoverflow.com/questions/10556879/changing-the-1-24-hour-to-1-12-hour-for-the-gethours-method
-      return (hours + 24) % 12 || 12;
-    },
-    getAmPm: function (hours) {
-      // https://stackoverflow.com/questions/8888491/how-do-you-display-javascript-datetime-in-12-hour-am-pm-format
-      return hours >= 12 ? 'pm' : 'am';
-    },
+    getHours12: function (hours) {return (hours + 24) % 12 || 12;},
+    getAmPm: function (hours) {return hours >= 12 ? 'pm' : 'am';},
     getFullOr3Letters: function (format, regex, nameArray, value) {
       return format.replace(regex, function (s) {
         var len = s.length;
@@ -194,6 +186,13 @@ export class DataService {
             hour: '2-digit',minute: '2-digit', second: '2-digit' }); //
     console.log(dtfUS.format(d)); // 08/05/2010 11:45:00 PM
     console.log(dtfUK.format(d)); // 05.08.2010 23:45:00
+  }
+
+  login1(payload:any){
+    // let url = "https://live.api.app.nammaflix.in/nammaflix/app/user/login/userName?mobile=8008934466&password=123456"
+    let url="https://live.api.app.nammaflix.in/nammaflix/app/user/mobile/login/password"
+    var body = {name:"somename", password:"somepass"}
+    return this.http.post(url,body);
   }
   
  }

@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AndroidPermissions } from '@awesome-cordova-plugins/android-permissions/ngx';
+import { Device } from '@ionic-native/device/ngx';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { AlertController } from '@ionic/angular';
-import { AlertService } from '../services/alertservice/alert-service.service';
 import { DataService } from '../services/data.service';
+
+
 
 
 
@@ -16,7 +18,7 @@ import { DataService } from '../services/data.service';
 export class DashboardPage implements OnInit {
 
   user:any;
-  cols =['ticketid','facility'];
+  cols =['ticketid','accountName'];
   tickets:any;
   latitude: any; 
   longitude: any;
@@ -27,17 +29,26 @@ export class DashboardPage implements OnInit {
     enableHighAccuracy: true, 
     maximumAge: 3600
   };
-  showLoader = false
+  showLoader = false;
+  minDistance:any;
+  imei:any;
 
   constructor(
     private dataservice: DataService, 
     private router: Router, 
+    private de: Device,
     private geolocation: Geolocation,    
     private androidPermissions: AndroidPermissions,
-    public alertservice: AlertController) { }
+    public alertservice: AlertController
+    ) { }
 
   ngOnInit() {
     // console.log(this.dataservice.DateFormatter.formatDate(new Date('2021-07-22 23:59:59'), 'YYYY-MM-DD HH:mm:ss')); 
+    // console.log(this.distance1(26.2153583, 81.2438148,26.2151,81.2467, 0))
+  }
+
+  getUniqueDeviceID() {
+    ('Device UUID is: ' + this.de.uuid)
   }
   /*  this is important */
   ionViewWillEnter(){
@@ -47,17 +58,14 @@ export class DashboardPage implements OnInit {
       this.router.navigateByUrl("/login")
      }
      this.checklocation();
+    //  this.getUniqueDeviceID()
   }
   checklocation(){
     this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION).then(
-      result => {
-        if(result.hasPermission == false){
-          this.router.navigateByUrl('/location')
-        }
-      }, 
-      err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION)
-    );
-  }
+      result => {if(result.hasPermission == false){this.router.navigateByUrl('/location')}}, 
+      err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION));
+    } 
+
   logout(){
     // localStorage.clear();
     localStorage.removeItem("user");
@@ -69,8 +77,12 @@ export class DashboardPage implements OnInit {
     this.dataservice.getOpenTickets(id).subscribe((res:any)=>{
       this.showLoader=false;
       if(res.Message !="Tickets are not available"){
-      this.tickets = res;
-      this.updateTicketdata();
+        var searchStr = (this.dataservice.DateFormatter.formatDate(new Date(), 'YYYY-MM-DD')); 
+        var abc = res;
+        this.tickets = abc.filter(x => x.scheduledDate.toLowerCase().includes(searchStr.toLowerCase()))
+        // this.tickets = res
+        // var y =  abc.filter( h => h.scheduledDate.includes(searchStr) );
+        this.updateTicketdata();
       }
       else{
         this.tickets = [];
@@ -79,19 +91,19 @@ export class DashboardPage implements OnInit {
   } 
   currenTicket:any;
   saveCoOrds(ticket:any){
-    if(ticket.latitude == null){
+    console.log(ticket)
+    if(ticket.latitude == null || ticket.latitude == "" || ticket.longitude == ""){
       this.updateTicketdata();
       this.showLoader=true;
       this.currenTicket=ticket;
-      if(this.savedstatus){
-        var x = (JSON.parse(localStorage.getItem('ticketstaus')))
-        if(ticket.latitude == null){
-          x.find(v => v.id == ticket.id).status = 'unregistered';
-          localStorage.setItem('ticketstaus', JSON.stringify(x))
-          this.savedstatus = x
-        }
-      }
-
+      // if(this.savedstatus){
+      //   var x = (JSON.parse(localStorage.getItem('ticketstaus')))
+      //   if(ticket.latitude == null){
+      //     x.find(v => v.id == ticket.id).status = 'unregistered';
+      //     localStorage.setItem('ticketstaus', JSON.stringify(x))
+      //     this.savedstatus = x
+      //   }
+      // }
       this.geolocation.getCurrentPosition().then((resp) => {
         setTimeout(() => {
           this.showLoader = false;
@@ -103,30 +115,40 @@ export class DashboardPage implements OnInit {
          console.log('Error getting location', error);
        });
     }else{
-      this.dataservice.presentAlert("Error !","Latitude and Longitude already captured", "Already Registered!")
+      this.dataservice.presentAlert("Information !","Latitude and Longitude already captured", "Already Registered!")
     }
   }
+  getmindist(){
+    this.dataservice.getMinDist().subscribe((data:any)=>{
+      this.minDistance = data;
+    })
+  }
   getAccount(id:any){
+    this.getmindist();
     this.dataservice.getAccount(id).subscribe((res:any)=>{
       this.latitude = Number(res[0].latitude);
       this.longitude = Number(res[0].longitude);
+      var today = (this.dataservice.DateFormatter.formatDate(new Date(), 'YYYY-MM-DD HH:mm:ss')); 
       if(this.latitude,this.longitude,this.currentlatitude,this.currentlongitude){
         var x = this.distance(this.latitude,this.longitude,this.currentlatitude,this.currentlongitude, "K");
-        if(x<0.2){
-          // this.currenTicket.latlongverified = "T";
+        var dist;
+        if(this.minDistance){dist = (this.minDistance/1000)}else{dist = 0.2}
+        if(x< dist){
+          this.currenTicket.latlongverified = "T";
+          this.currenTicket.loginTime = today;
           this.currenTicket.latitude =this.currentlatitude;
           this.currenTicket.longitude =this.currentlongitude;
           this.showLoader=true;
           this.dataservice.updatecords(this.currenTicket).subscribe((res:any)=>{
             this.showLoader=false;
-            this.dataservice.presentAlert("Response !","",res.Message)
+            this.dataservice.presentAlert("Response !","",res.Message);
           })
         }else{
-          // this.currenTicket.latlongverified = "T";
+          this.currenTicket.longitude = "FailedAttempt";
           this.dataservice.updatecords(this.currenTicket).subscribe((res:any)=>{
             this.showLoader=false;
           })
-          this.presentAlert(`Observed Latitude and Longitude do not match with site data. Please Contact Site Manager Team \n <br/>`)
+          this.presentAlert(`Ticket Id : ${this.currenTicket.ticketid} <br/>Unit Id : ${this.currenTicket.unitId} <br/><br/>Current Lat-Long : <br/>${this.currentlatitude} - ${this.currentlongitude} <br/><br/>Site Manager Lat-Long : <br/>${this.latitude} - ${this.longitude} <br/><br/>  <b>Total Difference : ${(Math.round(x*100)/100)} Kms</b> <br/>Please Contact Site Manager Team as per region : `)
         }
       }
     })
@@ -147,9 +169,7 @@ export class DashboardPage implements OnInit {
   distance1(lat1, lon1, lat2, lon2, unit) {
    var a =  { x: lat1, y: lon1 };
    var b ={ x: lat2, y: lon2 }
-    function toRadians(value) {
-      return value * Math.PI / 180
-    }
+    function toRadians(value) {return value * Math.PI / 180}
     var R = 6371.0710
     var rlat1 = toRadians(lat1) // Convert degrees to radians
     var rlat2 = toRadians(lat2) // Convert degrees to radians
@@ -159,6 +179,61 @@ export class DashboardPage implements OnInit {
   }
 
 
+
+  async presentAlert(msg:any) { 
+    const alert = document.createElement('ion-alert');
+    alert.cssClass = 'alert';
+    alert.header = 'Warning !';
+    alert.subHeader = 'Co-ordinates do not match';
+    alert.message = msg;
+    alert.buttons= [
+	    // {
+	    //   text: "Call : +91-91542 04944",
+	    //   handler: () => {window.open("tel:+919154204944")},
+	    // },
+	    // {
+	    //   text: "Call : +91-91549 05657",
+	    //   handler: () => {window.open("tel:+919154905657")},
+	    // },
+      // {
+	    //   text: "Call : +91-91210 55728",
+	    //   handler: () => {window.open("tel:+919121055728")},
+	    // },
+      {
+	      text: "KTK / WB - Mukesh P",
+	      handler: () => {window.open("tel:+918106689090")},
+	    },
+      {
+	      text: "AP / TS / TN - Suresh B",
+	      handler: () => {window.open("tel:+919100054322")},
+	    },
+      {
+	      text: "MH / GJ / OD - Anji Reddy",
+	      handler: () => {window.open("tel:+919346011010")},
+	    },
+      {
+	      text: "UP/DL/RJ/PB/JK - Amir Khan",
+	      handler: () => {window.open("tel:+919660664242")},
+	    },
+      {
+	      text: "CG/KL/AS/BH/MP - Hari Kishore",
+	      handler: () => {window.open("tel:+919542221222")},
+	    }, 
+      {
+	      text: "Cancel",
+        role : 'cancel',
+	    }
+	  ],
+    document.body.appendChild(alert);
+    await alert.present();
+    await alert.onDidDismiss().then(()=>{
+    });
+  }
+
+
+
+
+  
   savedstatus:any;
   saveTicketStatusLocally(){
     var status = [];
@@ -196,50 +271,6 @@ export class DashboardPage implements OnInit {
       this.saveTicketStatusLocally()
     }
   }
-  color(ticket:any){
-    if(ticket.latitude != null){
-      return 'registered'
-    }else{       
-      var x = (JSON.parse(localStorage.getItem('ticketstaus')))
-      if(x){
-        var y = x.filter(function( obj ) {return obj.id === ticket.id;}); 
-        return y.status;
-      }
-    }
-  }
-
-  async presentAlert(msg:any) { 
-    const alert = document.createElement('ion-alert');
-    alert.cssClass = 'alert';
-    alert.header = 'Error !';
-    alert.subHeader = 'Co-ordinates do not match';
-    alert.message = msg;
-    alert.buttons= [
-	    {
-	      text: "Call : +91-91542 04944",
-	      handler: () => {window.open("tel:+919154204944")},
-	    },
-	    {
-	      text: "Call : +91-91549 05657",
-	      handler: () => {window.open("tel:+919154905657")},
-	    },
-      {
-	      text: "Call : +91-91210 55728",
-	      handler: () => {window.open("tel:+919121055728")},
-	    },
-      {
-	      text: "Cancel",
-        role : 'cancel',
-	    }
-	  ],
-    document.body.appendChild(alert);
-    await alert.present();
-    await alert.onDidDismiss().then(()=>{
-    });
-  }
-
-
-
 
 }
 

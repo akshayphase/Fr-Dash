@@ -46,10 +46,13 @@ export class AppComponent {
     
     this.androidPermissions.requestPermissions([
       this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION, 
+      this.androidPermissions.PERMISSION.READ_PHONE_STATE,
       this.androidPermissions.PERMISSION.ACCESS_BACKGROUND_LOCATION,
       this.androidPermissions.PERMISSION.ACCESS_COARSE_LOCATION,
     ]);
   }
+
+
 
 
 

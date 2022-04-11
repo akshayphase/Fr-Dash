@@ -12,6 +12,10 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { AndroidPermissions } from '@awesome-cordova-plugins/android-permissions/ngx';
 import { IonicStorageModule } from '@ionic/storage-angular';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { UniqueDeviceID } from '@ionic-native/unique-device-id/ngx';
+import { Uid } from '@ionic-native/uid/ngx';
+import { Device } from '@ionic-native/device/ngx';
+
 
 
 
@@ -29,6 +33,9 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
     Geolocation,
     AndroidPermissions,
     SplashScreen,
+    Uid,
+    Device,
+    UniqueDeviceID,
     NativeGeocoder,],
   bootstrap: [AppComponent],
 })

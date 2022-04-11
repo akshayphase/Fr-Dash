@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertService } from '../services/alertservice/alert-service.service';
 import { DataService } from '../services/data.service';
+import { Device } from '@ionic-native/device/ngx';
+
 
 @Component({
   selector: 'app-login',
@@ -12,11 +14,14 @@ export class LoginPage implements OnInit {
   username: any;
   password: any;
   showLoader=false;
-  constructor(private dataservice: DataService, private router: Router,private alertService:AlertService) { }
+  constructor(
+    private dataservice: DataService, 
+    private router: Router,
+    private de: Device) { }
 
   ngOnInit() {
     if(JSON.parse(localStorage.getItem('user')) != null){
-      // this.router.navigateByUrl("/dashboard");
+      this.router.navigateByUrl("/dashboard");
     }
   }
 
@@ -25,12 +30,14 @@ export class LoginPage implements OnInit {
     var today = new Date().toJSON().slice(0,10).replace(/-/g,'/');
     localStorage.setItem('today', today);
     this.showLoader=true;
+    var deviceid = this.de.uuid;
     let data = {
-      "userName": this.username,
-      "password": this.password
+      userName: this.username,
+      password: this.password,
+      deviceId: deviceid
     }; 
   
-    if(this.username != "" && this.password!=""){
+    if(this.username != "" && this.password!="" && this.username != null && this.password!=null){
       this.dataservice.login(data).subscribe((res:any)=>{
         this.showLoader=false;
         if(res.status == "Success"){

@@ -14,7 +14,8 @@ export class LocationPage implements OnInit {
     private router: Router) { }
 
   ngOnInit() {
-    this.checklocation()
+    this.checklocation();
+    
   }
 
 
@@ -28,5 +29,11 @@ export class LocationPage implements OnInit {
       }, 
       err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.ACCESS_FINE_LOCATION)
     );
+  }
+
+  checkstate(){
+    this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.READ_PHONE_STATE).then(
+      result => {if(result.hasPermission == false){this.router.navigateByUrl('/location')}}, 
+      err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.READ_PHONE_STATE));
   }
 }

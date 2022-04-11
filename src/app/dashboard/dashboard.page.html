@@ -1,23 +1,22 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>dashboard</ion-title>
-  </ion-toolbar>
-</ion-header> -->
+<ion-header>
+  <div class="title">
+    <img src="../../assets/ivis.png" height="38px">
+    <ion-button (click)="logout()">Logout</ion-button>
+  </div>
+</ion-header>
 
 <ion-content>
   <app-loader *ngIf="showLoader"></app-loader>
-
   <div class="cont">
 
 
-    <div class="title">
-      <!-- <div>Hi {{user?.FirstName}}</div> -->
+    <!-- <div class="title">
       <img src="../../assets/ivis.png" height="38px">
       <ion-button (click)="logout()">Logout</ion-button>
-    </div>
+    </div> -->
 
-    <div class="data table table-striped" *ngIf="tickets?.length != 0">
-
+    <div class="data table table-striped">
+      <ion-button class="routebtn" [routerLink]="['/spares']">Spares</ion-button>
       <div class="ttl">
         Ticket Summary for  {{user?.FirstName}}  {{user?.LastName}}
       </div>
@@ -26,38 +25,46 @@
         <thead style="cursor: pointer;">
           <tr>
              <th *ngFor="let col of cols" >{{col}}</th>
-             <th style="width: 50px;">Status</th>
-             <th style="width: 100px;">lat / long</th>
+             <th style="width: 45px;">Status</th>
+             <!-- <th style="width: 50px;">UnitId</th> -->
+             <th style="width: 90px;">lat / long</th>
           </tr>
         </thead>
         <tbody *ngFor="let ticket of tickets; let i =index">
-          <!-- color(ticket) == 'registered' ? 'dot green' :
-          color(ticket) == 'unregistered' ? 'dot red':'dot transparent' -->
-          <tr class="tableElements">
-             <td *ngFor="let col of cols">{{ticket[col]}}</td>
-             <td style="text-align: -webkit-center;" ><div class="dot" 
-              [className]="
-              (savedstatus[i]?.status == 'registered' && savedstatus[i]?.id == ticket.id) ? 'dot green' :
-              (savedstatus[i]?.status == 'unregistered' && savedstatus[i]?.id == ticket.id) ? 'dot red' :'dot transparent'
-              "></div></td>
-
-              <!-- <td style="text-align: -webkit-center;" ><div class="dot" 
-                [className]="
-                (ticket.latlongverified == 'T' && ticket.latitude != null) ? 'dot green' :
-                (ticket.latlongverified == 'T' && ticket.latitude == null) ? 'dot red' :
-                (ticket.latlongverified == 'F' && ticket.latitude != null) ?  'dot red' : 'dot'
-                "></div></td> -->
-             <td style="text-align: center;"><button (click)="saveCoOrds(ticket)" >Capture</button></td>
-            </tr>
+          <tr class="tableElements" *ngIf="tickets?.length != 0">
+            <td *ngFor="let col of cols">{{ticket[col]}} <span *ngIf="col == 'accountName'"> / {{ticket.unitId}}</span></td>
+              <td style="text-align: -webkit-center;" >
+                <div class="dot" [className]="
+                (ticket.latlongverified == 'T' ) ? 'dot green' :
+                (ticket.longitude == 'FailedAttempt' ) ? 'dot red' : 'dot'">
+                </div>
+              </td>
+            <td style="text-align: center;"><button (click)="saveCoOrds(ticket)" >Capture</button></td>
+          </tr>
+          <tr class="tableElements"  *ngIf="tickets?.length == 0">
+            <td>no data</td>fvgfg
+          </tr>
 
         </tbody>
       </table>
+      <div *ngIf="tickets?.length == 0" style="color: #767676;"><u>No Tickets Avialable</u></div>
 
     </div>
-    <div *ngIf="tickets?.length == 0">No Tickets Avialable</div>
 
     <ion-img src="../../assets/refresh.svg" class="refreshbtn" (click)="getTickets()"></ion-img>
 
   </div>
 
 </ion-content>
+
+<!-- <ion-footer>
+  <ion-button></ion-button>
+</ion-footer> -->
+
+
+
+<!--
+                (ticket.latlongverified == 'T' && ticket.latitude != null && ticket.latitude !='') ? 'dot green' :
+                (ticket.latlongverified == 'T' && (ticket.latitude ==null || ticket.latitude == '')) ? 'dot red' :
+                (ticket.latlongverified == 'F' && ticket.latitude != null && ticket.latitude != '') ?  'dot red' : 'dot'
+ -->

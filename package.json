@@ -28,10 +28,13 @@
     "@capacitor/keyboard": "1.2.1",
     "@capacitor/status-bar": "1.0.7",
     "@ionic-native/background-mode": "^5.36.0",
+    "@ionic-native/device": "^5.36.0",
     "@ionic-native/geolocation": "^5.36.0",
     "@ionic-native/native-geocoder": "^5.36.0",
     "@ionic-native/splash-screen": "^5.36.0",
     "@ionic-native/streaming-media": "^5.36.0",
+    "@ionic-native/uid": "^5.36.0",
+    "@ionic-native/unique-device-id": "^5.36.0",
     "@ionic/angular": "^6.0.0",
     "@ionic/storage": "^2.0.0",
     "@ionic/storage-angular": "^3.0.6",
@@ -70,6 +73,8 @@
     "cordova-plugin-nativegeocoder": "^3.4.1",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-uid": "^1.3.0",
+    "cordova-plugin-uniquedeviceid": "^1.3.2",
     "cordova-sqlite-storage": "^6.0.0",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
@@ -101,7 +106,9 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-android-permissions": {},
       "cordova-sqlite-storage": {},
-      "cordova-plugin-background-mode": {}
+      "cordova-plugin-background-mode": {},
+      "cordova-plugin-uniquedeviceid": {},
+      "cordova-plugin-dreamover-uid": {}
     },
     "platforms": [
       "android"

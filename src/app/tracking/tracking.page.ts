@@ -32,7 +32,8 @@ export class TrackingPage implements OnInit {
     private geolocation:Geolocation,
     private storage: Storage,
     private alertCtrl:AlertController
-    ) {     this.initStorage();
+    ) {     
+      this.initStorage();
     }
   
     async initStorage() {
@@ -41,8 +42,6 @@ export class TrackingPage implements OnInit {
     }
     
     async ngOnInit() {
-      // If using a custom driver:
-      // await this.storage.defineDriver(MyCustomDriver)
       await this.storage.create();
     }
 
@@ -68,7 +67,8 @@ export class TrackingPage implements OnInit {
     loadHistoricRoutes(){
       this.storage.get('routes').then(data=>{
         if(data != null){
-          this.previousTracks = data;}
+          this.previousTracks = data;
+        }
       })
     }
 

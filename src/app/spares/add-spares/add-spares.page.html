@@ -1,0 +1,57 @@
+<ion-header>
+  <div class="title">
+    <img src="../../assets/ivis.png" height="38px">
+    <ion-button (click)="logout()">Logout</ion-button>
+  </div>
+</ion-header>
+
+<ion-content>
+  <app-loader *ngIf="showLoader"></app-loader>
+
+  <div class="cont">
+
+    <div class="data table table-striped">
+
+      <div class="ttl">
+        Add Spare
+        <ion-icon name="pencil-outline" style="position: absolute; top: 5px; right: 25px; pointer-events: all; z-index: 50;" (click)="entermanually = !entermanually"></ion-icon>
+
+      </div>
+
+      <div class="block">
+        <ion-item color='dark' *ngIf="entermanually"> 
+          <ion-label>Spare Group</ion-label>
+          <ion-select placeholder="Select One"  [(ngModel)]="selectedCategory" (ionChange)="onSelectChange($event, 'cat')">
+            <ion-select-option *ngFor="let cat of category" [value]="cat.Category">{{cat.Category}}</ion-select-option>
+            <!-- <ion-select-option value="m">Male</ion-select-option> -->
+          </ion-select>
+        </ion-item>
+        <ion-item color='dark' *ngIf="entermanually"> 
+          <ion-label>Spare Description</ion-label>
+          <ion-select placeholder="Select One" [disabled]="!subcategory" [(ngModel)]="selectedItem" (ionChange)="onSelectChange($event, 'subcat')">
+            <ion-select-option *ngFor="let cat of subcategory" [value]="cat.description" >{{cat.description}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item color="dark" style="position: relative;" *ngIf="!entermanually">
+          <ion-label position="floating">Enter Spare Name Manually</ion-label>
+          <ion-input [disabled]="entermanually" [(ngModel)]="spare.itemDescription"></ion-input>
+        </ion-item>  
+        <ion-item color="dark">
+          <ion-label position="floating">In Hand Quanity</ion-label>
+          <ion-input [(ngModel)]="spare.frInHandQty"></ion-input>
+        </ion-item>        
+        <ion-item color="dark">
+          <ion-label position="floating">Used Quanity</ion-label>
+          <ion-input [(ngModel)]="spare.frUsedQty"></ion-input>
+        </ion-item>
+      </div>
+
+    </div>
+    <ion-button class="routebtn" [routerLink]="['/spares']">Spares</ion-button>
+
+    <ion-img src="../../../assets/check.svg" class="refreshbtn" (click)="submitSpare()"></ion-img>
+
+  </div>
+
+</ion-content>
+
